@@ -14,7 +14,8 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
     >
       <ul className={`navbar-nav ${position}`}>
         <li className="nav-item">
-          <a className="nav-link">
+        <Navlink href="/">home</Navlink>
+          {/* <a className="nav-link">
             Home <i className="fa fa-angle-down"></i>
           </a>
           <ul className="tf__droap_menu">
@@ -27,7 +28,7 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
             <li>
               <SubNavlink href="/home-3">home 3</SubNavlink>
             </li>
-          </ul>
+          </ul> */}
         </li>
         <li className="nav-item">
           <Navlink href="/about">about us</Navlink>
