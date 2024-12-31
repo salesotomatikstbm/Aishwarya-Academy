@@ -2,8 +2,8 @@ import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 import AllCourseSection from "@/component/course/AllCourseSection";
 import Layout from "@/component/layout/Layout";
 export const metadata = {
-  title: 'Eduor Courses Page',
-  description: 'Developed by Azizur Rahman',
+    title: "Aishwarya Academy",
+    description: "Developed by Otomatiks",
 }
 export default function Courses() {
     return (

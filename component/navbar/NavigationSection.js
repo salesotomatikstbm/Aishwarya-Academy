@@ -36,11 +36,27 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
         <li className="nav-item">
           <Navlink href="/courses">courses</Navlink>
         </li>
+
         <li className="nav-item">
           <a className="nav-link">
             Exam <i className="fa fa-angle-down"></i>
           </a>
           <ul className="tf__droap_menu">
+          <li>
+              <SubNavlink href="">
+                TNPSC
+              </SubNavlink>
+            </li>
+            <li>
+              <SubNavlink href="">
+                Bank
+              </SubNavlink>
+            </li>
+            <li>
+              <SubNavlink href="">Railway</SubNavlink>
+            </li>
+          </ul>
+          {/* <ul className="tf__droap_menu">
             <li>
               <SubNavlink href="/courses/development-theory-learn">
                 courses details
@@ -82,8 +98,10 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
             <li>
               <SubNavlink href="/privacy-policy">privacy policy</SubNavlink>
             </li>
-          </ul>
+          </ul> */}
         </li>
+
+
         <li className="nav-item">
           <Navlink href="/blog">blog</Navlink>
         </li>

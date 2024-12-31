@@ -11,13 +11,13 @@ const BannerSection3 = () => {
         <div className="row">
           <div className="col-xl-8 col-md-10 col-lg-8">
             <div className="tf__banner_text wow fadeInUp">
-              <h5>Wellcome to Eduor!</h5>
+              <h5>Wellcome to Aishwarya Academy!</h5>
               <h1>
-                We Are Best <span>Online</span> Courses Education.
+              We Are The Best <span>Government Exam</span> Coaching Center.
               </h1>
               <p>
-                Our agency can only be as strong as our people & because of team
-                have designed game changing products.
+              Our coaching center is committed to providing the best preparation
+              for government exams, helping students succeed with expert guidance.
               </p>
               <ul className="d-flex flex-wrap align-items-center">
                 <li>

@@ -10,31 +10,32 @@ const AboutSection3 = ({ style }) => {
               <div className="tf__about_small">
                 <img
                   src="images/about_2_img_2.jpg"
-                  alt="about us"
+                  alt="Aishwarya Academy"
                   className="img-fluid w-100"
                 />
               </div>
               <div className="tf__about_large">
                 <img
                   src="images/about_2_img_1.jpg"
-                  alt="about us"
+                  alt="Aishwarya Academy"
                   className="img-fluid w-100"
                 />
               </div>
               <p>
-                <span>24+</span> Years of Experience
+                <span>10+</span> Years of Coaching
               </p>
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 wow fadeInRight">
             <div className="tf__about_2_text">
               <div className="tf__heading_area tf__heading_area_left mb_25">
-                <h5>OUR About Us</h5>
-                <h2>Complete About Students University Education.</h2>
+                <h5>ABOUT Aishwarya Academy</h5>
+                <h2>Complete Government Exam Coaching for Success.</h2>
               </div>
               <p>
-                Business tailored it design, management & support services
-                business agency elit, sed do eiusmod tempor.{" "}
+                Aishwarya Academy specializes in providing top-notch coaching for
+                various government exams like TNPSC, Banking, Railway, and more. Our expert faculty and
+                strategic teaching methods ensure success for every student.
               </p>
               <ul>
                 <li>
@@ -46,9 +47,10 @@ const AboutSection3 = ({ style }) => {
                     />
                   </div>
                   <div className="text">
-                    <h4>Successflly Trained</h4>
+                    <h4>Successfully Trained Candidates</h4>
                     <p>
-                      Business tailored it design, management support services.
+                      Thousands of students have successfully cleared their exams
+                      with the help of our expert coaching.
                     </p>
                   </div>
                 </li>
@@ -61,9 +63,10 @@ const AboutSection3 = ({ style }) => {
                     />
                   </div>
                   <div className="text">
-                    <h4>Education Growth</h4>
+                    <h4>Comprehensive Exam Preparation</h4>
                     <p>
-                      Business tailored it design, management support services.
+                      We provide in-depth study materials, mock tests, and
+                      personalized coaching for a variety of government exams.
                     </p>
                   </div>
                 </li>
@@ -76,13 +79,14 @@ const AboutSection3 = ({ style }) => {
                     />
                   </div>
                   <div className="text">
-                    <h4>Students Trained</h4>
+                    <h4>Student-Centric Approach</h4>
                     <p>
-                      Business tailored it design, management support services.
+                      Our coaching methods are designed to focus on individual
+                      strengths and weaknesses, ensuring holistic development.
                     </p>
                   </div>
                 </li>
-                <li>
+                {/* <li>
                   <div className="icon">
                     <img
                       src="images/about_2_icon_4.jpg"
@@ -91,12 +95,13 @@ const AboutSection3 = ({ style }) => {
                     />
                   </div>
                   <div className="text">
-                    <h4>Successflly Trained</h4>
+                    <h4>Proven Track Record</h4>
                     <p>
-                      Business tailored it design, management support services.
+                      Aishwarya Academy has a proven success rate, helping
+                      students secure top ranks in various government exams.
                     </p>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

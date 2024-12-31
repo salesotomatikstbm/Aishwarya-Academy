@@ -2,8 +2,8 @@ import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 import ContactPageSection from "@/component/contact/ContactPageSection";
 import Layout from "@/component/layout/Layout";
 export const metadata = {
-  title: 'Eduor Contact Page',
-  description: 'Developed by Azizur Rahman',
+    title: "Aishwarya Academy",
+    description: "Developed by Otomatiks",
 }
 export default function Contact() {
     return (

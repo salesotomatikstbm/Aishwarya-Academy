@@ -11,15 +11,12 @@ const ContactSection2 = () => {
             <div className="col-xl-6 col-lg-6 wow fadeInLeft">
               <div className="tf__contact_3_text">
                 <h2>
-                  Sing Up to <span>Complete</span> Students University
-                  Education.
+                  Sign Up to <span>Prepare</span> for Government Exams.
                 </h2>
                 <p>
-                  Business tailored it design, management & support services
-                  business agency elit, sed do eiusmod tempoIn capacity social
-                  science, agency is defined as the
+                  Join our expert-led coaching programs for TNPSC, Bank, Railway, and more. We provide personalized guidance and mock exams to help you succeed in your government exam journey.
                 </p>
-                <a href="#">apply now</a>
+                <a href="#">Apply Now</a>
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 wow fadeInRight">
@@ -37,11 +34,9 @@ const ContactSection2 = () => {
                   <div className="col-12">
                     <Form.Select className="select_js">
                       <option value="">Select a Course</option>
-                      <option value="">Red</option>
-                      <option value="">Black</option>
-                      <option value="">Orange</option>
-                      <option value="">Rose Gold</option>
-                      <option value="">Pink</option>
+                      <option value="">TNPSC</option>
+                      <option value="">Bank PO</option>
+                      <option value="">Railway</option>
                     </Form.Select>
                   </div>
                   <div className="col-12">
