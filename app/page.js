@@ -1,6 +1,7 @@
 import AboutSection3 from "@/component/about/AboutSection3";
 import ActivitySection2 from "@/component/activity/ActivitySection2";
 import BannerSection3 from "@/component/banner/BannerSection3";
+import HomeAdd from "@/component/banner/HomeAdd";
 import BlogSection2 from "@/component/blog/BlogSection2";
 import CategorySection3 from "@/component/category/CategorySection3";
 import ContactSection from "@/component/contact/ContactSection";
@@ -25,7 +26,7 @@ export default function Home3() {
       <NavbarSection style="main_menu_3" logo="images/logo3.png" />
       <BannerSection3 />
       <CategorySection3 />
-  
+  {/* <HomeAdd /> */}
       <AboutSection3 style="about_3" />
       <ContactSection />
       <CourseSection2 />
