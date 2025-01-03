@@ -4,8 +4,8 @@ import CourseDetailSection from "@/component/course/CourseDetailSection";
 import { courseDataArray } from "@/data/Data";
 import ErrorSection from "@/component/error/ErrorSection";
 export const metadata = {
-  title: "Eduor Course Details Page",
-  description: "Developed by Azizur Rahman",
+  title: "Aishwarya Academy",
+  description: "Developed by Otomatiks",
 };
 export default function CourseDetails({ params }) {
   const { slug } = params; // Destructure 'slug' from 'params'

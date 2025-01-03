@@ -36,8 +36,8 @@ const CourseDetailSection = ({ courseData }) => {
                     <p>{courseData.category}</p>
                   </li>
                   <li>
-                    <h4>review</h4>
-                    <p>{courseData.review} reviews</p>
+                    <h4>rating</h4>
+                    <p>{courseData.rating} rating</p>
                   </li>
                   <li>
                     <h4>price</h4>
