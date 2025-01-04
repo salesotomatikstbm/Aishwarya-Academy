@@ -52,7 +52,7 @@ const CourseSection2 = () => {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  <span>{item.price}</span>
+                  {/* <span>{item.price}</span> */}
                 </div>
                 <ul className="tf__single_course_header">
                   <li>

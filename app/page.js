@@ -11,6 +11,7 @@ import CourseSection2 from "@/component/course/CourseSection2";
 import FooterSection2 from "@/component/footer/FooterSection2";
 import VideoModal from "@/component/modal/VideoModal";
 import NavbarSection from "@/component/navbar/NavbarSection";
+import AdSlider from "@/component/slider/AdSlider";
 import TeamSection from "@/component/team/TeamSection";
 import TestimonialSection2 from "@/component/testimonial/TestimonialSection2";
 import TopbarSection from "@/component/topbar/TopbarSection";
@@ -30,7 +31,7 @@ export default function Home3() {
   {/* <HomeAdd /> */}
 
       <AboutSection3 style="about_3" />
-      <VideoSection />
+  <AdSlider />
       <ContactSection />
       <CourseSection2 />
       <CounterSection />

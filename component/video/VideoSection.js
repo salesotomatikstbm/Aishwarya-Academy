@@ -18,11 +18,11 @@ const VideoSection = () => {
                 >
                   <i className="fas fa-play"></i>
                 </a>
-                <h4>Poster Slider Section</h4>
-                {/* <p>
+                <h4>Let’s best Something Agency</h4>
+                <p>
                   There are many variations of passages of agency Lorem Ipsum
                   Fasts injecte.
-                </p> */}
+                </p>
                 <a className="common_btn" href="#">
                   Apply Now
                 </a>
