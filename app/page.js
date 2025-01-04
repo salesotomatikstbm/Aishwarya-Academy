@@ -15,6 +15,7 @@ import TeamSection from "@/component/team/TeamSection";
 import TestimonialSection2 from "@/component/testimonial/TestimonialSection2";
 import TopbarSection from "@/component/topbar/TopbarSection";
 import ScrollToTopButton from "@/component/utils/ScrollToTopButton";
+import VideoSection from "@/component/video/VideoSection";
 export const metadata = {
   title: "Aishwarya Academy",
   description: "Developed by Otomatiks",
@@ -27,7 +28,9 @@ export default function Home3() {
       <BannerSection3 />
       <CategorySection3 />
   {/* <HomeAdd /> */}
+
       <AboutSection3 style="about_3" />
+      <VideoSection />
       <ContactSection />
       <CourseSection2 />
       <CounterSection />
