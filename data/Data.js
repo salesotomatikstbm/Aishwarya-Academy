@@ -265,32 +265,33 @@ const workData = [
   {
     id: 0,
     imgSrc: "images/work_img_1.jpg",
-    task: "Classes Completed On Time",
+    task: "Modern Training Halls",
     color: "orange",
-    desc: "We can provide you with a reliable handyan in London. you need to included the today. However we feel like we should do more and have fun.",
+    desc: "Our training halls are equipped with cutting-edge technology to facilitate interactive learning and effective training sessions.",
   },
   {
     id: 1,
     imgSrc: "images/work_img_2.jpg",
+    task: "Resourceful Library",
     color: "green",
-    task: "Research Papers Submitted Fully",
-    desc: "Our students have submitted groundbreaking research papers in various fields of study, contributing to the advancement of knowledge.",
+    desc: "A well-stocked library with a vast collection of books and digital resources to support the academic and competitive needs of our trainees.",
   },
   {
     id: 2,
     imgSrc: "images/work_img_3.jpg",
-    task: "STEM Workshops Conducted",
+    task: "Practical Skill Labs",
     color: "red",
-    desc: "We organize STEM workshops to engage students in hands-on learning experiences in science, technology, engineering, and mathematics.",
+    desc: "Dedicated skill labs designed for hands-on training in various technical and vocational disciplines to enhance practical knowledge.",
   },
   {
     id: 3,
     imgSrc: "images/work_img_4.jpg",
-    task: "Language Proficiency Courses",
+    task: "Career Guidance Center",
     color: "blue",
-    desc: "Our language proficiency courses help students become fluent in multiple languages, opening up new opportunities for them.",
+    desc: "A dedicated space where trainees receive expert guidance and counseling for career development and exam preparation strategies.",
   },
 ];
+
 
 const testimonialData = [
   {
@@ -1144,33 +1145,45 @@ const activitiesData = [
     id: 0,
     color: "light_blue",
     iClassName: "fa fa-book",
-    title: "Parenting Bill",
+    title: "Group 2 Exam Preparation Batch",
+    startDate: "15th January 2025",
+    endDate: "15th April 2025",
   },
   {
     id: 1,
     color: "green",
     iClassName: "fa fa-graduation-cap",
-    title: "Engineering",
+    title: "Group 4 Exam Foundation Batch",
+    startDate: "20th January 2025",
+    endDate: "20th June 2025",
   },
   {
     id: 2,
     color: "orange",
     iClassName: "fa fa-university",
-    title: "Sports Training",
+    title: "TNPSC Exam Coaching Batch",
+    startDate: "25th January 2025",
+    endDate: "25th March 2025",
   },
   {
     id: 3,
     color: "blue",
     iClassName: "fa fa-books-medical",
-    title: "School Directly",
+    title: "Police Recruitment Training Batch",
+    startDate: "1st February 2025",
+    endDate: "1st May 2025",
   },
   {
     id: 4,
     color: "green",
     iClassName: "fa fa-analytics",
-    title: "Digital Marketing",
+    title: "Digital Marketing for TNPSC Aspirants",
+    startDate: "5th February 2025",
+    endDate: "5th March 2025",
   },
 ];
+
+
 
 export {
   eventData,

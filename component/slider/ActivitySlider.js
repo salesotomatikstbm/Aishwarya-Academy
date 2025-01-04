@@ -48,12 +48,17 @@ const ActivitySlider = () => {
     >
       {activitiesData.map((item) => (
         <div className="col-xl-3" key={item.id}>
-          <div className={`tf__activities_item ${item.color}`}>
-            <span>
-              {" "}
-              <i className={item.iClassName}></i>{" "}
+          <div className={`tf__activities_item ${item.color} p-4 border rounded shadow`}>
+            <span className="display-4">
+              <i className={item.iClassName}></i>
             </span>
-            <h3>{item.title}</h3>
+            <h3 className="h5 mt-3 mb-2">{item.title}</h3>
+            <p className="mb-1">
+              <strong>Start Date:</strong> {item.startDate}
+            </p>
+            <p>
+              <strong>End Date:</strong> {item.endDate}
+            </p>
           </div>
         </div>
       ))}
