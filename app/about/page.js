@@ -6,6 +6,7 @@ import CourseSection from "@/component/course/CourseSection";
 import FaqSection from "@/component/faq/FaqSection";
 import Layout from "@/component/layout/Layout";
 import PopularServiceSection2 from "@/component/service/PopularServiceSection2";
+import TeamSection from "@/component/team/TeamSection";
 export const metadata = {
     title: "Aishwarya Academy",
     description: "Developed by Otomatiks",
@@ -18,6 +19,7 @@ export default function About() {
                 <AboutSection3 style=''/>
                 {/* <PopularServiceSection2/> */}
                 <CourseSection style="tf__popular_courses"/>
+                <TeamSection style="tf__team_3 pt_250 pb_100" />
                 <FaqSection img="images/faq_img_2.jpg"/>
                 {/* <ActivitySection2 style="tf__activities_slider_area pt_95 pb_100"/> */}
                 <BlogSection/>
