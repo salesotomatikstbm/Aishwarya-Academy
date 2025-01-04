@@ -55,7 +55,7 @@ const AdSlider = () => {
               alt="Ad 1"
               className="img-fluid"
               style={{
-                maxHeight: '500px', 
+                maxHeight: '400px', 
                 objectFit: 'cover',
                 objectPosition: 'bottom', // Focus on the bottom of the image
               }}
@@ -67,7 +67,7 @@ const AdSlider = () => {
               alt="Ad 2"
               className="img-fluid"
               style={{
-                maxHeight: '500px',
+                maxHeight: '400px',
                 objectFit: 'cover',
                 objectPosition: 'bottom', // Focus on the bottom of the image
               }}
@@ -79,7 +79,7 @@ const AdSlider = () => {
               alt="Ad 3"
               className="img-fluid"
               style={{
-                maxHeight: '500px',
+                maxHeight: '400px',
                 objectFit: 'cover',
                 objectPosition: 'bottom', // Focus on the bottom of the image
               }}
