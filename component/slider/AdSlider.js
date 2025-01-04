@@ -46,28 +46,31 @@ const AdSlider = () => {
   };
 
   return (
-    <section className="ad-slider-section mt_100">
+    <section className="ad-slider-section mt-5">
       <div className="container">
         <Slider {...sliderSettings} className="popular_service_slider wow fadeInUp">
           <div>
             <img
-              src="images/blog_10.jpg"
+              src="images/ad1.png"
               alt="Ad 1"
-              className="img-fluid ad-image"
+              className="img-fluid"
+              style={{ maxHeight: '500px', objectFit: 'cover' }} // Limit height and make image responsive
             />
           </div>
           <div>
             <img
-              src="images/blog_10.jpg"
+             src="images/ad1.png"
               alt="Ad 2"
-              className="img-fluid ad-image"
+              className="img-fluid"
+              style={{ maxHeight: '500px', objectFit: 'cover' }} // Limit height and make image responsive
             />
           </div>
           <div>
             <img
-              src="images/blog_10.jpg"
+              src="images/ad1.png"
               alt="Ad 3"
-              className="img-fluid ad-image"
+              className="img-fluid"
+              style={{ maxHeight: '500px', objectFit: 'cover' }} // Limit height and make image responsive
             />
           </div>
         </Slider>
