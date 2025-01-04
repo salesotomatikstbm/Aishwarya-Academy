@@ -54,15 +54,23 @@ const AdSlider = () => {
               src="images/ad1.png"
               alt="Ad 1"
               className="img-fluid"
-              style={{ maxHeight: '500px', objectFit: 'cover' }} // Limit height and make image responsive
+              style={{
+                maxHeight: '500px', 
+                objectFit: 'cover',
+                objectPosition: 'bottom', // Focus on the bottom of the image
+              }}
             />
           </div>
           <div>
             <img
-             src="images/ad1.png"
+              src="images/ad1.png"
               alt="Ad 2"
               className="img-fluid"
-              style={{ maxHeight: '500px', objectFit: 'cover' }} // Limit height and make image responsive
+              style={{
+                maxHeight: '500px',
+                objectFit: 'cover',
+                objectPosition: 'bottom', // Focus on the bottom of the image
+              }}
             />
           </div>
           <div>
@@ -70,7 +78,11 @@ const AdSlider = () => {
               src="images/ad1.png"
               alt="Ad 3"
               className="img-fluid"
-              style={{ maxHeight: '500px', objectFit: 'cover' }} // Limit height and make image responsive
+              style={{
+                maxHeight: '500px',
+                objectFit: 'cover',
+                objectPosition: 'bottom', // Focus on the bottom of the image
+              }}
             />
           </div>
         </Slider>
