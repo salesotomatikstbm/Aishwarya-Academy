@@ -4,8 +4,8 @@ import CountUp from "react-countup";
 import TestimonialSlider2 from "../slider/TestimonialSlider2";
 const TestimonialSection2 = () => {
   return (
-    <section className="tf__testimonial_2 mt_250 pb_45">
-      <div className="tf__counter_2 wow fadeInUp">
+    <section className="tf__testimonial_2_area mt_250 pb_45 ">
+      {/* <div className="tf__counter_2 wow fadeInUp">
         <div className="container">
           <div className="tf__counter_area mt_95">
             <div className="tf__counter2_overlay">
@@ -38,7 +38,7 @@ const TestimonialSection2 = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="tf__testimonial_2_area">
         <div className="container">

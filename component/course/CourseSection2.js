@@ -16,21 +16,24 @@ const CourseSection2 = () => {
       : courseDataArray.filter((item) => item.category === activeCategory);
 
   return (
-    <section className="tf__courses_2 tf__courses_3">
-      <div className="container">
+    <section className="tf__courses_2 tf__courses_3 overflow-hidden">
+      <div className="container overflow-hidden">
+        {/* Heading */}
         <div className="row wow fadeInUp">
-          <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto">
-            <div className="tf__heading_area mb_20 text-center">
+          <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto text-center">
+            <div className="tf__heading_area mb-4">
               <h5>OUR POPULAR COURSES</h5>
               <h2>Educational For Students Popular Courses</h2>
             </div>
           </div>
         </div>
-        <div className="d-flex justify-content-center mb-4">
+
+        {/* Category Filters */}
+        <div className="d-flex flex-wrap justify-content-center mb-4">
           {categories.map((category) => (
             <button
               key={category}
-              className={`btn btn-primary mx-2 ${
+              className={`btn btn-primary mx-2 mb-3 ${
                 activeCategory === category ? "active" : ""
               }`}
               onClick={() => setActiveCategory(category)}
@@ -39,11 +42,16 @@ const CourseSection2 = () => {
             </button>
           ))}
         </div>
+
+        {/* Course Cards */}
         <div className="row">
           {filteredCourses.map((item) => (
-            <div className="col-xl-4 col-md-6 wow fadeInUp" key={item.id}>
-              <div className="tf__single_courses">
-                <div className="tf__single_courses_img">
+            <div
+              className="col-xl-4 col-md-6 col-sm-12 wow fadeInUp mb-4"
+              key={item.id}
+            >
+              <div className="tf__single_courses h-100">
+                <div className="tf__single_courses_img position-relative">
                   <img
                     src={item.imgSrc}
                     alt={item.title}
@@ -52,9 +60,8 @@ const CourseSection2 = () => {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  {/* <span>{item.price}</span> */}
                 </div>
-                <ul className="tf__single_course_header">
+                <ul className="tf__single_course_header d-flex justify-content-between p-2">
                   <li>
                     <i className="fas fa-user"></i> {item.instructor}
                   </li>
@@ -62,12 +69,12 @@ const CourseSection2 = () => {
                     <i className="fas fa-folder-open"></i> {item.lessons}
                   </li>
                 </ul>
-                <div className="tf__single_courses_text">
-                  <Link className="title" href={`/courses/${item.slug}`}>
+                <div className="tf__single_courses_text p-3 text-center">
+                  <Link className="title d-block mb-2" href={`/courses/${item.slug}`}>
                     {item.title}
                   </Link>
-                  <p className="description">{item.description}</p>
-                  <ul>
+                  <p className="description mb-2">{item.description}</p>
+                  <ul className="list-unstyled">
                     <li>{item.students}</li>
                   </ul>
                 </div>

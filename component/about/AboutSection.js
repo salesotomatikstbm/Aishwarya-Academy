@@ -3,9 +3,9 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="tf__about mt_250 xs_mt_195">
+    <section className="tf__about mt_100 xs_mt_195">
       <div className="container">
-        <div className="tf__about_top wow fadeInUp">
+        {/* <div className="tf__about_top wow fadeInUp">
           <div className="row">
             <div className="col-xl-5 col-lg-5">
               <div className="tf__about_top_img">
@@ -32,7 +32,7 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="row">
           <div className="col-xl-6 col-md-9 col-lg-6 wow fadeInLeft">
