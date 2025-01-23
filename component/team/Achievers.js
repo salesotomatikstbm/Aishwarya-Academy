@@ -1,24 +1,23 @@
 "use client";
 import React from "react";
-import ActivitySlider from "../slider/ActivitySlider";
+import TeamSlider from "../slider/TeamSlider";
 
-const ActivitySection2 = ({ style }) => {
+const Achievers = ({ style }) => {
   return (
-    <div className={style}>
+    <section className={style}>
       <div className="container">
         <div className="row wow fadeInUp">
           <div className="col-xl-6 col-xxl-5 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_15">
-            <h5 className="text-white">WHY CHOOSE US</h5>
-<h2>Start Your Learning Journey Today!</h2>
-
+              <h5>Meet OUR Achievers</h5>
+              <h2>Become A Instruction Instructor Teacher.</h2>
             </div>
           </div>
         </div>
-        <ActivitySlider />
+        <TeamSlider />
       </div>
-    </div>
+    </section>
   );
 };
 
-export default ActivitySection2;
+export default Achievers;

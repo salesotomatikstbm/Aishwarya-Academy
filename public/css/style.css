@@ -1175,7 +1175,7 @@ button {
 .tf__about::after {
   position: absolute;
   content: "";
-  background: url(../images/book_shapes.png);
+  /* background: url(../images/book_shapes.png); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1192,7 +1192,7 @@ button {
 .tf__about::before {
   position: absolute;
   content: "";
-  background: url(../images/pen_shapes.png);
+  /* background: url(../images/pen_shapes.png); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

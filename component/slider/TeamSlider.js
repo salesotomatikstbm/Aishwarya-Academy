@@ -55,7 +55,7 @@ const TeamSlider = () => {
                 alt={item.name}
                 className="img-fluid w-100"
               />
-              <ul>
+              {/* <ul>
                 <li>
                   <a href="#">
                     <i className="fab fa-facebook-f"></i>
@@ -76,13 +76,14 @@ const TeamSlider = () => {
                     <i className="fab fa-pinterest-p"></i>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
             <div className="tf__single_team_text">
               <Link className="title" href={`/team/${item.slug}`}>
                 {item.name}
               </Link>
               <p>{item.designation}</p>
+              <p>{item.about}</p>
             </div>
           </div>
         </div>

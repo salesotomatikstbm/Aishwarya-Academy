@@ -39,10 +39,10 @@ const HeroSection = () => {
           className="hero-image-container rounded-lg overflow-hidden mx-auto"
           style={{
             backgroundImage: `url(https:${heroData.img.fields.file.url})`,
-            backgroundSize: "contain", // Ensure the whole image fits within the container
-            backgroundRepeat: "no-repeat", // Prevent repeating the image
-            backgroundPosition: "center", // Center the image in the container
-            height: "100vh", // Use full viewport height to make the image visible in full size
+            backgroundSize: "cover", // Ensure the image covers the full container
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            height: "100vh", // Full viewport height
           }}
         >
           {/* Overlay text or buttons can be added here */}

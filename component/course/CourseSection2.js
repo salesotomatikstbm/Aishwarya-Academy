@@ -16,7 +16,7 @@ const CourseSection2 = () => {
       : courseDataArray.filter((item) => item.category === activeCategory);
 
   return (
-    <section className="tf__courses_2 tf__courses_3 overflow-hidden">
+    <section className="tf__courses_2 tf__courses_3 overflow-hidden  mt_95">
       <div className="container overflow-hidden">
         {/* Heading */}
         <div className="row wow fadeInUp">

@@ -515,43 +515,43 @@ const services = [
   {
     id: 0,
     iClassName: "fa fa-university",
-    title: "TNPSC Coaching",
-    desc: "Prepare for TNPSC exams with expert guidance and comprehensive study material.",
+    title: "TNPSC EXAMS",
+    desc: "TNPSC Group 1,Group 2/2A , Group IV Exams",
     color: "red",
   },
   {
     id: 1,
     iClassName: "fa fa-credit-card",
-    title: "Banking Exam Coaching",
-    desc: "Crack banking exams with our specialized coaching for SBI, IBPS, and other banking exams.",
+    title: "BANK EXAMS",
+    desc: "IBPS,SBI,RRBPO/CLERK, RBI - Assistant ",
     color: "gray",
   },
   {
     id: 2,
     iClassName: "fa fa-train",
-    title: "Railway Exam Coaching",
-    desc: "Get trained for RRB exams with our experienced trainers and focused study plans.",
+    title: "SSC EXAMS",
+    desc: "TNPSC Group 1, Group 2/2A , Group IV exams ",
     color: "green",
   },
   {
     id: 3,
     iClassName: "fa fa-users",
-    title: "TNEB (Tamil Nadu Electricity Board) Exam Coaching",
-    desc: "Prepare for TNEB exams with our tailored coaching and mock tests for success.",
+    title: "RAILWAY EXAMS",
+    desc: "IBPS,SBI,RRBPO/CLERK, RBI - Assistant ",
     color: "blue",
   },
   {
     id: 4,
     iClassName: "fa fa-briefcase",
-    title: "TNPSC Group 4 Coaching",
-    desc: "Get ready for TNPSC Group 4 exams with our expert teachers and strategic study plans.",
+    title: "POLICE/SI EXAMS",
+    desc: "TNPSC Group 1, Group 2/2A , Group IV exams",
     color: "orange",
   },
   {
     id: 5,
     iClassName: "fa fa-book-reader",
-    title: "TN Police Exam Coaching",
-    desc: "Ace the TN Police exam with personalized coaching and rigorous practice tests.",
+    title: "TUITIONS",
+    desc: "CBSE & Matric 9th, 10th, 11th and 12th ",
     color: "purple",
   },
  
@@ -1003,8 +1003,7 @@ const teamData = [
     name: "Ravi Kumar",
     designation: "Teacher",
     slug: "ravi-kumar",
-    about:
-      "I am a dedicated teacher with a passion for inspiring young minds in Tamil Nadu. I believe in creating a positive learning environment to help students reach their full potential.",
+    about:"Exam Name",
     phone: "+91 (123) 456-7890",
   },
   {
@@ -1013,9 +1012,8 @@ const teamData = [
     name: "Karthik Subramanian",
     designation: "Teacher",
     slug: "karthik-subramanian",
-    about:
-      "As the principal of this school, I am committed to fostering academic excellence and a supportive community in Tamil Nadu. Together, we shape the future of our students.",
-    phone: "+91 (234) 567-8901",
+    about:"Exam Name",
+     phone: "+91 (234) 567-8901",
   },
   {
     id: 2,
@@ -1023,9 +1021,8 @@ const teamData = [
     name: "Meera Nair",
     designation: "Assistant Teacher",
     slug: "meera-nair",
-    about:
-      "I assist students in their learning journey, ensuring they grasp fundamental concepts. Together, we explore the exciting world of knowledge.",
-    phone: "+91 (345) 678-9012",
+    about:"Exam Name",
+      phone: "+91 (345) 678-9012",
   },
   {
     id: 3,
@@ -1033,9 +1030,8 @@ const teamData = [
     name: "Vinod Raj",
     designation: "Counselor",
     slug: "vinod-raj",
-    about:
-      "I provide guidance and support to students facing personal and academic challenges. My goal is to help them thrive emotionally and academically.",
-    phone: "+91 (456) 789-0123",
+    about:"Exam Name",
+     phone: "+91 (456) 789-0123",
   },
   {
     id: 4,
@@ -1043,9 +1039,8 @@ const teamData = [
     name: "Saroja Devi",
     designation: "Librarian",
     slug: "saroja-devi",
-    about:
-      "As a librarian, I'm passionate about nurturing a love for reading and research. I'm here to assist students in their quest for knowledge.",
-    phone: "+91 (567) 890-1234",
+    about:"Exam Name",
+     phone: "+91 (567) 890-1234",
   },
   {
     id: 5,
@@ -1053,9 +1048,8 @@ const teamData = [
     name: "Arunachalam",
     designation: "Science Teacher",
     slug: "arunachalam",
-    about:
-      "Science is my passion, and I aim to make it exciting and accessible for all students. Let's explore the wonders of the natural world together.",
-    phone: "+91 (678) 901-2345",
+    about:"Exam Name",
+     phone: "+91 (678) 901-2345",
   },
   {
     id: 6,
@@ -1063,9 +1057,8 @@ const teamData = [
     name: "Vidhya Rani",
     designation: "Art Teacher",
     slug: "vidhya-rani",
-    about:
-      "I believe in the power of creativity to inspire and empower. Let's unleash our artistic potential and create beautiful masterpieces.",
-    phone: "+91 (789) 012-3456",
+    about:"Exam Name",
+     phone: "+91 (789) 012-3456",
   },
   {
     id: 7,
@@ -1073,9 +1066,8 @@ const teamData = [
     name: "Suresh Kumar",
     designation: "Math Teacher",
     slug: "suresh-kumar",
-    about:
-      "Mathematics is a fascinating puzzle waiting to be solved. I'm here to guide you through the world of numbers and equations.",
-    phone: "+91 (890) 123-4567",
+    about:"Exam Name",
+     phone: "+91 (890) 123-4567",
   },
   {
     id: 8,
@@ -1083,9 +1075,8 @@ const teamData = [
     name: "Lakshmi Ravi",
     designation: "Music Teacher",
     slug: "lakshmi-ravi",
-    about:
-      "Music is a universal language that brings joy and harmony. Let's explore the magic of melodies and rhythms together.",
-    phone: "+91 (901) 234-5678",
+    about:"Exam Name",
+     phone: "+91 (901) 234-5678",
   },
   {
     id: 9,
@@ -1093,9 +1084,8 @@ const teamData = [
     name: "Nithya Venkatesh",
     designation: "Physical Education Teacher",
     slug: "nithya-venkatesh",
-    about:
-      "Physical fitness is essential for a healthy life. Let's stay active and have fun while developing strength and coordination.",
-    phone: "+91 (012) 345-6789",
+    about:"Exam Name",
+     phone: "+91 (012) 345-6789",
   },
   {
     id: 10,
@@ -1103,9 +1093,8 @@ const teamData = [
     name: "Pradeep Ramasamy",
     designation: "History Teacher",
     slug: "pradeep-ramasamy",
-    about:
-      "History is a fascinating journey through time. Join me in uncovering the stories and events that have shaped our world.",
-    phone: "+91 (123) 456-7890",
+    about:"Exam Name",
+     phone: "+91 (123) 456-7890",
   },
   {
     id: 11,
@@ -1113,8 +1102,7 @@ const teamData = [
     name: "Anjali Devi",
     designation: "Language Teacher",
     slug: "anjali-devi",
-    about:
-      "Language opens doors to new cultures and perspectives. Let's embark on a linguistic adventure to broaden our horizons.",
+    about:"Exam Name",
     phone: "+91 (234) 567-8901",
   },
   {
@@ -1123,9 +1111,8 @@ const teamData = [
     name: "Tharun Rajan",
     designation: "Gym Instructor",
     slug: "tharun-rajan",
-    about:
-      "Fitness is not just a goal; it's a lifestyle. Together, we'll work towards achieving a healthy and active way of life.",
-    phone: "+91 (345) 678-9012",
+    about:"Exam Name",
+     phone: "+91 (345) 678-9012",
   },
   {
     id: 13,
@@ -1133,8 +1120,7 @@ const teamData = [
     name: "Mani Karthik",
     designation: "IT Specialist",
     slug: "mani-karthik",
-    about:
-      "In the digital age, technology is our ally. I'm here to ensure our school's tech infrastructure runs smoothly and securely.",
+    about:"Exam Name",
     phone: "+91 (456) 789-0123",
   },
 ];
@@ -1182,6 +1168,35 @@ const activitiesData = [
     endDate: "5th March 2025",
   },
 ];
+
+export const whyChooseUsData = [
+  {
+    id: 0,
+    icon: "fa fa-book",
+    title: "Group 2 Exam Preparation Batch",
+  },
+  {
+    id: 1,
+    icon: "fa fa-graduation-cap",
+    title: "Group 4 Exam Foundation Batch",
+  },
+  {
+    id: 2,
+    icon: "fa fa-university",
+    title: "TNPSC Exam Coaching Batch",
+  },
+  {
+    id: 3,
+    icon: "fa fa-books-medical",
+    title: "Police Recruitment Training Batch",
+  },
+  {
+    id: 4,
+    icon: "fa fa-analytics",
+    title: "Digital Marketing for TNPSC Aspirants",
+  },
+];
+
 
 
 

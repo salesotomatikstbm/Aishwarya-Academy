@@ -38,19 +38,20 @@ const AboutSection = () => {
           <div className="col-xl-6 col-md-9 col-lg-6 wow fadeInLeft">
             <div className="tf__about_text">
               <div className="tf__heading_area tf__heading_area_left mb_25">
-                <h5>OUR About Us</h5>
-                <h2>District is Made of about Students Childhood.</h2>
+                <h5>ABOUT Aishwarya Academy</h5>
+                <h2>Complete Government Exam Coaching for Success.</h2>
               </div>
-              <p>
-                Business tailored it design, management & support services
-                business agency elit, sed do eiusmod tempor.{" "}
+              <p style={{ textAlign: "justify" }}>
+                Aishwarya Academy specializes in providing top-notch coaching for
+                various government exams like TNPSC, Banking, Railway, and more. Our expert faculty and
+                strategic teaching methods ensure success for every student.
               </p>
-              <ul>
-                <li>Business school's Institut constructivism.</li>
-                <li>We give management school best.</li>
-                <li>Media in this school solution.</li>
-                <li>Business school's Institut constructivism.</li>
-                <li>We give management school best.</li>
+              <ul style={{ textAlign: "justify" }}>
+                <li>Expert coaching for TNPSC exams with a focus on practical knowledge.</li>
+                <li>Comprehensive preparation for Banking exams with a high success rate.</li>
+                <li>In-depth Railway exam coaching for aspiring candidates.</li>
+                <li>Personalized study plans and mentorship for each student.</li>
+                <li>Regular mock tests to assess and improve student performance.</li>
               </ul>
               <Link href="/about" className="common_btn">
                 about more
