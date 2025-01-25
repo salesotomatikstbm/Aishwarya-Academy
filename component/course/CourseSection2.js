@@ -7,8 +7,10 @@ import Link from "next/link";
 const CourseSection2 = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
+  // Get all unique categories and add "All" as the first option
   const categories = ["All", ...new Set(courseDataArray.map((item) => item.category))];
 
+  // Filter courses based on the selected category
   const filteredCourses =
     activeCategory === "All"
       ? courseDataArray
@@ -26,6 +28,7 @@ const CourseSection2 = () => {
           </div>
         </div>
 
+        {/* Category Filter Buttons */}
         <div className="d-flex flex-wrap justify-content-center mb-4">
           {categories.map((category) => (
             <button
@@ -38,18 +41,19 @@ const CourseSection2 = () => {
           ))}
         </div>
 
+        {/* Display Filtered Courses */}
         <div className="row">
           {filteredCourses.map((item) => (
             <div
               className="col-xl-3 col-md-6 col-sm-12 wow fadeInUp mb-4"
               key={item.id}
             >
-              <div className="tf__single_courses h-95">
+              <div className="tf__single_courses h-100">
                 <div className="tf__single_courses_img position-relative">
                   <img
                     src={item.imgSrc}
                     alt={item.title}
-                    className="img-fluid w-100 h-24 sm:h-32 md:h-40 object-cover" // Reduced image height for responsiveness
+                    className="img-fluid w-100 h-24 sm:h-32 md:h-40 object-cover" // Adjusted image height for small images
                   />
                 </div>
                 <div className="tf__single_courses_text p-3 text-center">
