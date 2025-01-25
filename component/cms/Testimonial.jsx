@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { client } from "../cms/contentfulClient"; // Assuming you're using Contentful for CMS
-import Slider from "react-slick"; // Import react-slick
 
 const Testimonial = () => {
   const [videoEmbedLinks, setVideoEmbedLinks] = useState([]);
@@ -90,50 +89,11 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <Slider
-      className="row testimonial_slider"
-      slidesToShow={2} // Set the number of slides to show
-      infinite={true}
-      dots={false}
-      arrows={false}
-      slidesToScroll={1}
-      responsive={[
-        {
-          breakpoint: 1400,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ]}
-          >
+
+          <div className="row my-5">
             {videoEmbedLinks.map((link, index) => (
-              <div className="col-xl-6 wow fadeInUp tf__single_testimonial " key={index}>
-                
-                <div className="ratio ratio-16x9 ">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4" key={index}>
+                <div className="ratio ratio-16x9">
                   <iframe
                     src={link}
                     title={`Testimonial Video ${index + 1}`}
@@ -143,7 +103,7 @@ const Testimonial = () => {
                 </div>
               </div>
             ))}
-          </Slider>
+          </div>
         </div>
       ) : (
         <div className="container my-5">
