@@ -10,6 +10,10 @@ const CategoryGrid = () => {
           <div
             className="col-6 col-sm-4 col-lg-4"
             key={item.id}
+            style={{
+              paddingLeft: 0, 
+              paddingRight: 0, 
+            }}
           >
             <div
               className={`tf__popular_service_single ${item.color} p-3 border rounded shadow`}
@@ -17,6 +21,7 @@ const CategoryGrid = () => {
                 textAlign: "center",
                 wordBreak: "break-word",
                 height: "100%",
+                padding: "0 15px", 
               }}
             >
               <span

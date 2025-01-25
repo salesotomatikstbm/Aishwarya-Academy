@@ -15,9 +15,8 @@ const CourseSection2 = () => {
       : courseDataArray.filter((item) => item.category === activeCategory);
 
   return (
-    <section className="tf__courses_2 tf__courses_3 overflow-hidden  mt_95">
+    <section className="tf__courses_2 tf__courses_3 overflow-hidden mt_95">
       <div className="container overflow-hidden">
-      
         <div className="row wow fadeInUp">
           <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto text-center">
             <div className="tf__heading_area mb-4">
@@ -31,9 +30,7 @@ const CourseSection2 = () => {
           {categories.map((category) => (
             <button
               key={category}
-              className={`btn btn-primary mx-2 mb-3 ${
-                activeCategory === category ? "active" : ""
-              }`}
+              className={`btn btn-primary mx-2 mb-3 ${activeCategory === category ? "active" : ""}`}
               onClick={() => setActiveCategory(category)}
             >
               {category}
@@ -52,28 +49,13 @@ const CourseSection2 = () => {
                   <img
                     src={item.imgSrc}
                     alt={item.title}
-                    className="img-fluid w-100"
+                    className="img-fluid w-100 h-24 sm:h-32 md:h-40 object-cover" // Reduced image height for responsiveness
                   />
-                  {/* <a className={`categories ${item.color}`} href="#">
-                    {item.category}
-                  </a> */}
                 </div>
-                {/* <ul className="tf__single_course_header d-flex justify-content-between p-2">
-                  <li>
-                    <i className="fas fa-user"></i> {item.instructor}
-                  </li>
-                  <li>
-                    <i className="fas fa-folder-open"></i> {item.lessons}
-                  </li>
-                </ul> */}
                 <div className="tf__single_courses_text p-3 text-center">
                   <Link className="d-block" href={`/courses/${item.slug}`}>
                     {item.title}
                   </Link>
-                  {/* <p className="description mb-2">{item.description}</p>
-                  <ul className="list-unstyled">
-                    <li>{item.students}</li>
-                  </ul> */}
                 </div>
               </div>
             </div>

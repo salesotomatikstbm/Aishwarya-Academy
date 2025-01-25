@@ -19,8 +19,11 @@ const Testimonial = () => {
         }
 
         const videoLinks = response.items.flatMap((item) => {
-          const richTextFields = [item?.fields?.videolink, item?.fields?.videolink2];
-          return richTextFields.map((richText) => findVideoUrl(richText)).filter(Boolean);
+          // Check all video-related fields
+          const videoFields = [item?.fields?.videolink, item?.fields?.videolink2, item?.fields?.videolink3];
+          return videoFields
+            .map((field) => findVideoUrl(field)) // Extract video URL from the field
+            .filter(Boolean); // Filter out any null values
         });
 
         if (videoLinks.length === 0) {
@@ -32,11 +35,9 @@ const Testimonial = () => {
         const embedLinks = videoLinks.map((videoUrl) => {
           let videoId = null;
 
-          if (videoUrl.includes("youtube.com/watch")) {
-            const match = videoUrl.match(/[?&]v=([^&]+)/);
-            videoId = match ? match[1] : null;
-          } else if (videoUrl.includes("youtu.be/")) {
-            const match = videoUrl.match(/youtu\.be\/([^?]+)/);
+          // Handle multiple YouTube URL formats
+          if (videoUrl.includes("youtube.com/watch") || videoUrl.includes("youtu.be/")) {
+            const match = videoUrl.match(/[?&]v=([^&]+)/) || videoUrl.match(/youtu\.be\/([^?]+)/);
             videoId = match ? match[1] : null;
           } else if (videoUrl.includes("youtube.com/embed/")) {
             videoId = videoUrl.split("/embed/")[1];
@@ -45,7 +46,7 @@ const Testimonial = () => {
           return videoId ? `https://www.youtube.com/embed/${videoId}` : null;
         });
 
-        setVideoEmbedLinks(embedLinks.filter(Boolean));
+        setVideoEmbedLinks(embedLinks.filter(Boolean)); // Remove null embed links
       } catch (err) {
         console.error("Error fetching testimonial data:", err);
         setError(err.message || "An unexpected error occurred.");
@@ -55,18 +56,22 @@ const Testimonial = () => {
     fetchTestimonialData();
   }, []);
 
-  // Function to recursively find video URLs within the rich text object
+  // Function to recursively find all YouTube video URLs within the rich text object
   const findVideoUrl = (node) => {
     if (!node) return null;
 
+    // If it's a hyperlink, check if the URL is a valid YouTube video URL
     if (node.nodeType === "hyperlink" && node.data?.uri) {
-      return node.data.uri; // Return the hyperlink URL
+      const url = node.data.uri;
+      if (url.includes("youtube.com/watch") || url.includes("youtu.be/")) {
+        return url; // Return the YouTube URL
+      }
     }
 
     if (node.content && Array.isArray(node.content)) {
       for (const childNode of node.content) {
         const videoUrl = findVideoUrl(childNode);
-        if (videoUrl) return videoUrl;
+        if (videoUrl) return videoUrl; // If we find a video URL, return it
       }
     }
 
