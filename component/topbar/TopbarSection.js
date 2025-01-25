@@ -2,7 +2,7 @@ import React from 'react';
 
 const TopbarSection = ({ style }) => {
   return (
-    <section className={style}>
+    <section className={style} style={{ backgroundColor: 'rgb(213, 28, 34)' }}>
       <div className="container">
         <div className="row">
           {/* Left Section - Contact Details */}

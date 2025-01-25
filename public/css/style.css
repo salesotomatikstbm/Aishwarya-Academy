@@ -110,9 +110,9 @@ button {
 }
 
 :root {
-  --colorPrimary: #ff7f46;
-  --colorBlue: #4582ff;
-  --colorGreen: #00d6d3;
+  --colorPrimary: rgb(213, 28, 34);
+  --colorBlue: #00d6d3;
+  --colorGreen: rgb(213, 28, 34);
   --colorBlack: #0f2239;
   --paraColor: #636363;
   --ratingColor: #f1cc38;
@@ -169,7 +169,7 @@ button {
   background: var(--colorBlue) !important;
 }
 .main_menu_3 .common_btn {
-  background-color: #00d6d3 !important;
+  background-color: rgb(213, 28, 34) !important;
 }
 .common_btn_2:hover,
 .common_btn_2:focus {
@@ -887,35 +887,35 @@ button {
 }
 
 .tf__single_category.blue .tf__single_category_icon {
-  background: #4582ff;
+  background: #ff7f46;
 }
 
 .tf__single_category.blue .tf__single_category_text {
-  border-color: #4582ff;
+  border-color: #ff7f46;
 }
 
 .tf__single_category.blue:hover .tf__single_category_text::after {
-  background: #4582ff;
+  background: #ff7f46;
 }
 
 .tf__single_category.blue:hover .tf__single_category_icon {
-  color: #4582ff;
+  color: #ff7f46;
 }
 
 .tf__single_category.green .tf__single_category_icon {
-  background: #1ab69d;
+  background: rgb(213, 28, 34);
 }
 
 .tf__single_category.green .tf__single_category_text {
-  border-color: #1ab69d;
+  border-color: rgb(213, 28, 34);
 }
 
 .tf__single_category.green:hover .tf__single_category_text::after {
-  background: #1ab69d;
+  background: rgb(213, 28, 34);
 }
 
 .tf__single_category.green:hover .tf__single_category_icon {
-  color: #1ab69d;
+  color: rgb(213, 28, 34);
 }
 
 .tf__single_category.gray .tf__single_category_icon {
@@ -1281,7 +1281,7 @@ button {
 }
 
 .tf__single_event_img .event_category.green {
-  background: #1ab69d;
+  background: rgb(213, 28, 34);
 }
 
 .tf__single_event_img .event_category.red {
