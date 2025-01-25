@@ -44,7 +44,7 @@ const CourseSection2 = () => {
               className="col-xl-3 col-md-6 col-sm-12 wow fadeInUp mb-4"
               key={item.id}
             >
-              <div className="tf__single_courses h-100">
+              <div className="tf__single_courses h-95">
                 <div className="tf__single_courses_img position-relative">
                   <img
                     src={item.imgSrc}

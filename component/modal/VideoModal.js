@@ -8,7 +8,7 @@ const VideoModal = () => {
         showVideo,
         handleVideoClose,
     } = useEduorContext()
-    const embedUrl = "https://www.youtube.com/embed/0M1C9yEzplI?si=Z3EwaFEt9ugA_2XS";
+    const embedUrl = "https://www.youtube.com/embed/EYPe-La941s?si=FrrSHP8Bxi2LORpa";
   return (
     <Modal show={showVideo} onHide={handleVideoClose} size='lg' centered className="modal-video" id="LKQIY6EGFR9TU">
         <Modal.Header className='vidoe-modal-header' closeButton></Modal.Header>
