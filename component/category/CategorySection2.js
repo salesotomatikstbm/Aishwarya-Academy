@@ -19,7 +19,7 @@ const CategorySection2 = () => {
           
           {/* ServiceSlider (Visible on Desktop) */}
           <div className="d-none d-md-block">
-            <ServiceSlider />
+          <CategoryGrid />
           </div>
 
           {/* CategoryGrid (Visible on Mobile) */}
