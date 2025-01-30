@@ -20,7 +20,7 @@ const Testimonial = () => {
 
         const videoLinks = response.items.flatMap((item) => {
           // Check all video-related fields
-          const videoFields = [item?.fields?.videolink, item?.fields?.videolink2, item?.fields?.videolink3];
+          const videoFields = [item?.fields?.videolink, item?.fields?.videolink2, item?.fields?.videolink3, item?.fields?.videolink4];
           return videoFields
             .map((field) => findVideoUrl(field)) // Extract video URL from the field
             .filter(Boolean); // Filter out any null values

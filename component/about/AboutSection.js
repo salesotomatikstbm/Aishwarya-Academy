@@ -65,11 +65,11 @@ const AboutSection = () => {
                 alt="about"
                 className="img-fluid w-100"
               />
-              <div className="text">
+              {/* <div className="text">
                 <i className="far fa-check-circle"></i>
                 <h3>183k+</h3>
                 <p>Complete Projects</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
