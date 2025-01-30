@@ -565,7 +565,7 @@ const courseDataArray = [
     "imgSrc": "images/courses_img_13.jpg",
     "color": "green",
     "slug": "sbi-clerk-exam-preparation",
-    "title": "SBI Clerk",
+    "title": "SBI PO",
     "category": "BANK EXAMS",
     "price": "₹4500.00",
     "instructor": "Aishwarya Academy",

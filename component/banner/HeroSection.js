@@ -6,22 +6,30 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const HeroSection = () => {
-  const [heroImages, setHeroImages] = useState([]);
+  const [heroImagesDesktop, setHeroImagesDesktop] = useState([]);
+  const [heroImagesMobile, setHeroImagesMobile] = useState([]);
   const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchHeroData = async () => {
       try {
         const response = await client.getEntries({ content_type: "heroSection" });
         if (response.items.length > 0) {
-          const images = response.items[0].fields.img;
+          const desktopImages = response.items[0].fields.img2;
+          const mobileImages = response.items[0].fields.img;
 
-          // Check if `img` is an array and extract image URLs
-          const extractedImages = Array.isArray(images)
-            ? images.map((img) => img.fields.file.url)
-            : [images?.fields?.file?.url]; // If single image, convert to array
+          // Check if `img` is an array and extract image URLs for both desktop and mobile
+          const extractedDesktopImages = Array.isArray(desktopImages)
+            ? desktopImages.map((img) => img.fields.file.url)
+            : [desktopImages?.fields?.file?.url];
 
-          setHeroImages(extractedImages.filter(Boolean)); // Remove undefined values
+          const extractedMobileImages = Array.isArray(mobileImages)
+            ? mobileImages.map((img) => img.fields.file.url)
+            : [mobileImages?.fields?.file?.url];
+
+          setHeroImagesDesktop(extractedDesktopImages.filter(Boolean)); // Remove undefined values
+          setHeroImagesMobile(extractedMobileImages.filter(Boolean)); // Remove undefined values
         } else {
           setError("No hero images found.");
         }
@@ -33,6 +41,18 @@ const HeroSection = () => {
 
     fetchHeroData();
   }, []);
+
+  useEffect(() => {
+    // Preload images once they're fetched
+    if (heroImagesDesktop.length > 0 || heroImagesMobile.length > 0) {
+      const preloadImages = [...heroImagesDesktop, ...heroImagesMobile];
+      preloadImages.forEach((imageSrc) => {
+        const img = new Image();
+        img.src = `https:${imageSrc}`; // Preload the images
+      });
+      setIsLoading(false); // Mark as loaded after preloading
+    }
+  }, [heroImagesDesktop, heroImagesMobile]);
 
   if (error) {
     return (
@@ -57,21 +77,37 @@ const HeroSection = () => {
 
   return (
     <main>
-      {heroImages.length > 0 ? (
+      {isLoading ? (
+        <div className="spinner-container">
+          <div className="spinner"></div>
+        </div>
+      ) : (
         <Slider {...settings} className="hero-slider">
-          {heroImages.map((image, index) => (
+          {heroImagesDesktop.map((desktopImage, index) => (
             <div key={index} className="hero-slide">
+              {/* Desktop Image */}
               <img
-                src={`https:${image}`}
+                src={`https:${desktopImage}`}
                 alt={`Slide ${index + 1}`}
-                className="w-100"
-                style={{ height: "100vh", objectFit: "cover" }}
+                className="w-100 d-block d-sm-none" // Show on mobile
+                style={{
+                  height: "100vh", // Full viewport height for desktop
+                  objectFit: "cover", // Ensure full coverage
+                }}
+              />
+              {/* Mobile Image */}
+              <img
+                src={`https:${heroImagesMobile[index]}`}
+                alt={`Slide ${index + 1}`}
+                className="w-100 d-none d-sm-block" // Show on desktop
+                style={{
+                  height: "100vh", // Full viewport height for mobile
+                  objectFit: "cover", // Ensure the image covers the screen
+                }}
               />
             </div>
           ))}
         </Slider>
-      ) : (
-        <p>Loading...</p>
       )}
     </main>
   );

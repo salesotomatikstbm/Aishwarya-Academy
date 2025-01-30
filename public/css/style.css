@@ -259,6 +259,31 @@ button {
   background-color: rgb(213, 28, 34) !important;
   color: white !important;
 }
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background-color: #fff; /* Optional: can be changed for a different background */
+}
+
+.spinner {
+  border: 8px solid rgba(255, 255, 255, 0.3); /* Light gray color for the background part */
+  border-top: 8px solid red; /* Red color for the spinning part */
+  border-radius: 50%;
+  width: 60px; /* Size of the spinner */
+  height: 60px; /* Size of the spinner */
+  animation: spin 1.5s linear infinite; /* Smoother and faster animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 
 /* section heading css start */
