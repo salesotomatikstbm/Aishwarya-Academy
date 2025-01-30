@@ -2,12 +2,15 @@ import ActivitySection2 from "@/component/activity/ActivitySection2";
 import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 import ContactSection2 from "@/component/contact/ContactSection2";
 import AllCourseSection from "@/component/course/AllCourseSection";
+import TrainingLevels from "@/component/course/TrainingLevels";
 import BankExam from "@/component/Exam/BankExam";
 import Police from "@/component/Exam/Police";
 import Layout from "@/component/layout/Layout";
 import VideoModal from "@/component/modal/VideoModal";
 import GovtService from "@/component/service/GovtService";
 import PopularServiceSection from "@/component/service/PopularServiceSection";
+import Achievers from "@/component/team/Achievers";
+import CourseFeature from "@/component/team/CourseFeatures";
 import VideoSection from "@/component/video/VideoSection";
 import WorkSection from "@/component/work/WorkSection";
 export const metadata = {
@@ -29,7 +32,9 @@ export default function Courses() {
          <Police />
         <GovtService />
          <VideoSection />
-       
+         <TrainingLevels />
+        <CourseFeature />
+        <Achievers style="tf__team_3 pt_250 pb_100"/>
      </Layout>
     )
 }

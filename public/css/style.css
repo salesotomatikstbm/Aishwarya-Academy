@@ -285,6 +285,88 @@ button {
   }
 }
 
+/* training */
+/* Container for the entire walking steps flow */
+.walking-steps-container {
+  display: flex;
+  flex-direction: row; /* Arrange steps horizontally */
+  justify-content: center; /* Center-align content horizontally */
+  align-items: center; /* Center-align content vertically */
+  gap: 40px; /* Space between each step */
+  margin-top: 60px; /* Add margin on top for better spacing */
+  position: relative;
+  padding: 0 20px; /* Add padding for better layout on smaller screens */
+}
+
+/* Individual step */
+.walking-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition for hover effects */
+  padding: 20px; /* Padding inside each step box */
+  border-radius: 8px; /* Rounded corners for the step box */
+  border: 2px solid #ddd; /* Border around each step box */
+  background-color: #f9f9f9; /* Light background for each step box */
+}
+
+/* Hover effect for walking steps */
+.walking-step:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add a soft shadow effect */
+}
+
+/* Box around the images */
+.walking-step img {
+  width: 100%; /* Full width for container */
+  max-width: 170px; /* Max image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular images */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow around images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for images */
+.walking-step img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Step Title */
+.walking-step h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Step Description */
+.walking-step p {
+  font-size: 14px;
+  color: #555; /* Slightly darker text color */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .walking-steps-container {
+    flex-direction: column; /* Stack steps vertically on small screens */
+    align-items: center; /* Center-align vertically */
+  }
+
+  .walking-step {
+    margin-bottom: 20px; /* Space between each step in column view */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .walking-step img {
+    width: 80%; /* Adjust image width on smaller screens */
+    max-width: 130px; /* Adjust max width for smaller screens */
+  }
+}
+
+
+
 
 /* section heading css start */
 .tf__heading_area {
