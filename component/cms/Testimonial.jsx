@@ -96,19 +96,24 @@ const Testimonial = () => {
           </div>
 
           <div className="row my-5">
-            {videoEmbedLinks.map((link, index) => (
-              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4" key={index}>
-                <div className="ratio ratio-16x9">
-                  <iframe
-                    src={link}
-                    title={`Testimonial Video ${index + 1}`}
-                    allowFullScreen
-                    className="rounded"
-                  ></iframe>
-                </div>
-              </div>
-            ))}
-          </div>
+  {videoEmbedLinks.map((link, index) => (
+    <div
+      className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4" // 3 per row on desktop, 2 per row on mobile
+      key={index}
+    >
+      <div className="ratio ratio-16x9">
+        <iframe
+          src={link}
+          title={`Testimonial Video ${index + 1}`}
+          allowFullScreen
+          className="rounded"
+        ></iframe>
+      </div>
+    </div>
+  ))}
+</div>
+
+
         </div>
       ) : (
         <div className="container my-5">

@@ -29,17 +29,21 @@ const CourseSection2 = () => {
         </div>
 
         {/* Category Filter Buttons */}
-        <div className="d-flex flex-wrap justify-content-center mb-4">
-  {categories.map((category) => (
-    <button
-      key={category}
-      className={`btn tf__button_area mx-2 mb-3 ${activeCategory === category ? "active" : ""}`}
-      onClick={() => setActiveCategory(category)}
-    >
-      {category}
-    </button>
-  ))}
+       {/* Category Filter Buttons */}
+<div className="d-flex flex-wrap justify-content-center mb-4">
+  <div className="category-tabs-container">
+    {categories.map((category) => (
+      <button
+        key={category}
+        className={`btn tf__button_area mx-2 mb-3 ${activeCategory === category ? "active" : ""}`}
+        onClick={() => setActiveCategory(category)}
+      >
+        {category}
+      </button>
+    ))}
+  </div>
 </div>
+
 
 
         {/* Desktop View */}

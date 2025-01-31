@@ -15,13 +15,14 @@ const CategoryGrid = () => {
               paddingRight: 0, 
             }}
           >
-            <div
+           <div
               className={`tf__popular_service_single ${item.color} p-3 border rounded shadow`}
               style={{
                 textAlign: "center",
                 wordBreak: "break-word",
                 height: "100%",
-                padding: "0 15px", 
+                padding: "0 15px",
+                background: `url(${item.bgImage}) center/cover no-repeat`, // Dynamic background
               }}
             >
               <span

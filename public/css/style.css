@@ -168,9 +168,11 @@ button {
 .common_btn_2 {
   background: var(--colorBlue) !important;
 }
+
 .main_menu_3 .common_btn {
   background-color: rgb(213, 28, 34) !important;
 }
+
 .common_btn_2:hover,
 .common_btn_2:focus {
   animation: pulse2 1s;
@@ -259,27 +261,36 @@ button {
   background-color: rgb(213, 28, 34) !important;
   color: white !important;
 }
+
 .spinner-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full screen height */
-  background-color: #fff; /* Optional: can be changed for a different background */
+  height: 100vh;
+  /* Full screen height */
+  background-color: #fff;
+  /* Optional: can be changed for a different background */
 }
 
 .spinner {
-  border: 8px solid rgba(255, 255, 255, 0.3); /* Light gray color for the background part */
-  border-top: 8px solid red; /* Red color for the spinning part */
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  /* Light gray color for the background part */
+  border-top: 8px solid red;
+  /* Red color for the spinning part */
   border-radius: 50%;
-  width: 60px; /* Size of the spinner */
-  height: 60px; /* Size of the spinner */
-  animation: spin 1.5s linear infinite; /* Smoother and faster animation */
+  width: 60px;
+  /* Size of the spinner */
+  height: 60px;
+  /* Size of the spinner */
+  animation: spin 1.5s linear infinite;
+  /* Smoother and faster animation */
 }
 
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -289,13 +300,19 @@ button {
 /* Container for the entire walking steps flow */
 .walking-steps-container {
   display: flex;
-  flex-direction: row; /* Arrange steps horizontally */
-  justify-content: center; /* Center-align content horizontally */
-  align-items: center; /* Center-align content vertically */
-  gap: 40px; /* Space between each step */
-  margin-top: 60px; /* Add margin on top for better spacing */
+  flex-direction: row;
+  /* Arrange steps horizontally */
+  justify-content: center;
+  /* Center-align content horizontally */
+  align-items: center;
+  /* Center-align content vertically */
+  gap: 40px;
+  /* Space between each step */
+  margin-top: 60px;
+  /* Add margin on top for better spacing */
   position: relative;
-  padding: 0 20px; /* Add padding for better layout on smaller screens */
+  padding: 0 20px;
+  /* Add padding for better layout on smaller screens */
 }
 
 /* Individual step */
@@ -305,33 +322,48 @@ button {
   align-items: center;
   text-align: center;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition for hover effects */
-  padding: 20px; /* Padding inside each step box */
-  border-radius: 8px; /* Rounded corners for the step box */
-  border: 2px solid #ddd; /* Border around each step box */
-  background-color: #f9f9f9; /* Light background for each step box */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Add smooth transition for hover effects */
+  padding: 20px;
+  /* Padding inside each step box */
+  border-radius: 8px;
+  /* Rounded corners for the step box */
+  border: 2px solid #ddd;
+  /* Border around each step box */
+  background-color: #f9f9f9;
+  /* Light background for each step box */
 }
 
 /* Hover effect for walking steps */
 .walking-step:hover {
-  transform: translateY(-10px); /* Slight lift effect on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add a soft shadow effect */
+  transform: translateY(-10px);
+  /* Slight lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  /* Add a soft shadow effect */
 }
 
 /* Box around the images */
 .walking-step img {
-  width: 100%; /* Full width for container */
-  max-width: 170px; /* Max image width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Circular images */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow around images */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  width: 100%;
+  /* Full width for container */
+  max-width: 170px;
+  /* Max image width */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 50%;
+  /* Circular images */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* Shadow around images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition on hover */
 }
 
 /* Hover effect for images */
 .walking-step img:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  transform: scale(1.1);
+  /* Slight zoom on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  /* Enhance shadow on hover */
 }
 
 /* Step Title */
@@ -344,24 +376,31 @@ button {
 /* Step Description */
 .walking-step p {
   font-size: 14px;
-  color: #555; /* Slightly darker text color */
+  color: #555;
+  /* Slightly darker text color */
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .walking-steps-container {
-    flex-direction: column; /* Stack steps vertically on small screens */
-    align-items: center; /* Center-align vertically */
+    flex-direction: column;
+    /* Stack steps vertically on small screens */
+    align-items: center;
+    /* Center-align vertically */
   }
 
   .walking-step {
-    margin-bottom: 20px; /* Space between each step in column view */
-    padding: 10px; /* Adjust padding for smaller screens */
+    margin-bottom: 20px;
+    /* Space between each step in column view */
+    padding: 10px;
+    /* Adjust padding for smaller screens */
   }
 
   .walking-step img {
-    width: 80%; /* Adjust image width on smaller screens */
-    max-width: 130px; /* Adjust max width for smaller screens */
+    width: 80%;
+    /* Adjust image width on smaller screens */
+    max-width: 130px;
+    /* Adjust max width for smaller screens */
   }
 }
 
@@ -1282,9 +1321,11 @@ button {
   font-weight: 500;
   color: var(--colorWhite);
 }
+
 .tf__faq {
   background-image: url(../images/faq_bg.png);
 }
+
 .tf__banner_3 .tf__banner_text::after,
 .tf__faq::after,
 .tf__about::after {
@@ -2900,12 +2941,42 @@ button {
 }
 
 /* popular services end */
+.category-tabs-container {
+  display: flex;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  padding-bottom: 10px;
+}
+
+.category-tabs-container::-webkit-scrollbar {
+  height: 8px; /* Optional: to customize the appearance of the scrollbar */
+}
+
+.category-tabs-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Optional: scrollbar color */
+  border-radius: 10px;
+}
+
+.category-tabs-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Optional: scrollbar hover color */
+}
+
+@media (max-width: 768px) {
+  .category-tabs-container {
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+
+  .category-tabs-container button {
+    white-space: nowrap; /* Prevent text from wrapping within buttons */
+  }
+}
+
+
 
 /* popular courses start */
 .tf__single_courses {
   margin-top: 25px;
   border: 1px solid #ddd;
-  border-radius: 40px;
+  border-radius: 20px;
   overflow: hidden;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
@@ -2915,12 +2986,17 @@ button {
 }
 
 .tf__single_courses_img {
-  height: 80px; /* Set the height to your desired size */
-  width: 80px; /* Set width to the desired size */
+  height: 80px;
+  /* Set the height to your desired size */
+  width: 80px;
+  /* Set width to the desired size */
   position: relative;
-  display: flex; /* Enables Flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex;
+  /* Enables Flexbox */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
   overflow: hidden;
   margin-bottom: 2px;
 }
@@ -2931,19 +3007,23 @@ button {
   -moz-transition: all linear 0.3s;
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
-  object-fit: contain; /* Ensures the image is scaled down without clipping */
-  max-width: 100%; /* Ensures image doesn't overflow horizontally */
-  max-height: 100%; /* Ensures image doesn't overflow vertically */
+  object-fit: contain;
+  /* Ensures the image is scaled down without clipping */
+  max-width: 100%;
+  /* Ensures image doesn't overflow horizontally */
+  max-height: 100%;
+  /* Ensures image doesn't overflow vertically */
 }
 
 .tf__single_courses_img .categories {
   position: absolute;
   top: 10px;
   right: 10px;
-  padding: 6px !important; 
+  padding: 6px !important;
   background: var(--colorPrimary);
   color: var(--colorWhite);
-  font-size: 14px; /* Adjusted font size */
+  font-size: 14px;
+  /* Adjusted font size */
   font-weight: 400;
   text-transform: uppercase;
   font-family: var(--paraFont);
@@ -3092,6 +3172,7 @@ button {
 .tf__activities_slider_area {
   background-image: url(../images/activities_bg.jpg);
 }
+
 .tf__activities_slider_area .tf__heading_area h5,
 .tf__activities_slider_area .tf__heading_area h2 {
   color: var(--colorWhite);
@@ -4181,16 +4262,16 @@ button {
   -o-transform: rotate(25deg);
 }
 
-.tf__topbar_right > ul {
+.tf__topbar_right>ul {
   line-height: 50px;
   justify-content: end;
 }
 
-.tf__topbar_right > ul > li {
+.tf__topbar_right>ul>li {
   position: relative;
 }
 
-.tf__topbar_right > ul > li > a {
+.tf__topbar_right>ul>li>a {
   font-size: 14px;
   color: var(--colorWhite);
   text-transform: capitalize;
@@ -4204,7 +4285,7 @@ button {
   -o-transition: all linear 0.3s;
 }
 
-.tf__topbar_right > ul > li > a::after {
+.tf__topbar_right>ul>li>a::after {
   position: absolute;
   content: "";
   width: 1px;
@@ -4219,16 +4300,16 @@ button {
   -o-transform: translateY(-50%);
 }
 
-.tf__topbar_right > ul > li:last-child > a {
+.tf__topbar_right>ul>li:last-child>a {
   margin-right: 0;
   padding-right: 0;
 }
 
-.tf__topbar_right > ul > li:last-child > a::after {
+.tf__topbar_right>ul>li:last-child>a::after {
   display: none;
 }
 
-.tf__topbar_right > ul > li:hover > a {
+.tf__topbar_right>ul>li:hover>a {
   text-decoration: underline;
 }
 
@@ -4280,7 +4361,7 @@ button {
   border: 1px solid var(--colorBlack);
 }
 
-.tf__topbar_right > ul > li:hover .tf__other_language {
+.tf__topbar_right>ul>li:hover .tf__other_language {
   opacity: 1;
   visibility: visible;
   top: 99%;
@@ -4982,6 +5063,7 @@ button {
 .tf__footer_2 .tf__footer_apply {
   background-image: url(../images/footer_apply_bg.jpg);
 }
+
 .tf__footer_2 .tf__footer_overlay {
   background: #002f6cf5;
 }
@@ -5464,12 +5546,14 @@ button {
   -o-border-radius: 10px;
   background-image: url(../images/contact_3_bg.jpg);
 }
+
 select.select_js.form-select {
   border: none;
   border-radius: 0;
   margin-bottom: 20px;
   padding: 15px 20px;
 }
+
 .tf__contact_3_text h2 {
   color: var(--colorWhite);
   font-weight: 700;
@@ -5635,9 +5719,11 @@ select.select_js.form-select {
 .tf__footer_3 .tf__footer_apply .venobox {
   background: var(--colorGreen);
 }
+
 .tf__footer_3 .tf__footer_apply {
   background-image: url(../images/footer_apply_bg2.jpg);
 }
+
 .tf__footer_3 .tf__footer_apply .tf__footer_apply_overlay {
   background: #191e24a3;
 }
@@ -6121,6 +6207,71 @@ select.select_js.form-select {
   -o-border-radius: 20px;
 }
 
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .tf__single_team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 320px; /* Ensure equal height for all boxes */
+  }
+
+  .tf__single_team_img {
+    height: 180px; /* Reduce image height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .tf__single_team_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fits the space uniformly */
+  }
+
+  .tf__single_team_text {
+    flex-grow: 1; /* Makes the text area flexible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .tf__single_team_text {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between; /* Space out the content */
+    align-items: center; /* Center vertically */
+    padding: 5px;
+    text-align: center;
+  }
+
+  .tf__single_team_text span {
+    display: inline-block;
+    margin: 0 5px; /* Space between the span elements */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ensure the text doesn't overflow */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .col-sm-6 {
+    width: 50%; /* Ensure 2 videos per row on small screens */
+  }
+}
+
+
+
 .tf__single_team_img ul {
   position: absolute;
   top: 20px;
@@ -6138,6 +6289,8 @@ select.select_js.form-select {
   -ms-transform: scaleY(0.5);
   -o-transform: scaleY(0.5);
 }
+
+
 
 .tf__single_team_img ul li a {
   width: 40px;
@@ -6440,72 +6593,95 @@ select.select_js.form-select {
 .mt_95 {
   margin-top: 95px;
 }
+
 .mt_250 {
   margin-top: 250px;
 }
+
 .mt_100 {
   margin-top: 100px;
 }
+
 .pt_95 {
   padding-top: 95px;
 }
+
 .pb_100 {
   padding-bottom: 100px;
 }
+
 .pt_100 {
   padding-top: 100px;
 }
+
 .pt_75 {
   padding-top: 75px;
 }
+
 .mb_20 {
   margin-bottom: 20px;
 }
+
 .pt_225 {
   padding-top: 225px;
 }
+
 .mt_110 {
   margin-top: 110px;
 }
+
 .mt_195 {
   margin-top: 195px;
 }
+
 .mb_40 {
   margin-bottom: 40px;
 }
+
 .mb_45 {
   margin-bottom: 45px;
 }
+
 .mt_190 {
   margin-top: 190px;
 }
+
 .pt_250 {
   padding-top: 250px;
 }
+
 .mb_15 {
   margin-bottom: 15px;
 }
+
 .mt_50 {
   margin-top: 50px;
 }
+
 .mt_65 {
   margin-top: 65px;
 }
+
 .pb_45 {
   padding-bottom: 45px;
 }
+
 .mt_60 {
   margin-top: 60px;
 }
+
 .mt_35 {
   margin-top: 35px;
 }
+
 .mt_55 {
   margin-top: 55px;
 }
+
 .pt_190 {
   padding-top: 190px;
 }
+
 /* Margin and Padding shortcut */
 
 .tf__counter2_overlay .counter span {
@@ -6516,37 +6692,47 @@ select.select_js.form-select {
   display: inline;
   text-align: center;
 }
+
 .slick-dots li button:before {
   display: none;
 }
+
 .slick-dots {
   bottom: unset !important;
 }
+
 li.slick-active {
   width: 40px !important;
 }
+
 section.tf__counter_3 {
   padding-bottom: 80px;
 }
+
 .modal-video .modal-content {
   background-color: transparent;
   border: none;
 }
+
 .video-modal-iframe {
   width: 100%;
   height: 460px;
 }
+
 .vidoe-modal-header.modal-header {
   padding: 0;
   border: 0;
   font-size: 20px;
 }
+
 .tf__scroll_btn.style-2 {
   background-color: #4582ff;
 }
+
 .tf__scroll_btn.style-3 {
   background-color: #00d6d3;
 }
+
 /* Loading Container Styles */
 .loading-container {
   display: flex;
@@ -6565,12 +6751,16 @@ section.tf__counter_3 {
 
 /* Loader Styles */
 .loader {
-  border: 4px solid #f3f3f3; /* Light gray border */
-  border-top: 4px solid #3498db; /* Blue border for animation */
-  border-radius: 50%; /* Circular shape */
+  border: 4px solid #f3f3f3;
+  /* Light gray border */
+  border-top: 4px solid #3498db;
+  /* Blue border for animation */
+  border-radius: 50%;
+  /* Circular shape */
   width: 50px;
   height: 50px;
-  animation: spin 2s linear infinite; /* Spin animation */
+  animation: spin 2s linear infinite;
+  /* Spin animation */
 }
 
 /* Keyframe Animation for Loader */
@@ -6578,10 +6768,12 @@ section.tf__counter_3 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 /* Responsive */
 @media (min-width: 1400px) and (max-width: 1700px) {
   .tf__about::after {
@@ -6656,6 +6848,7 @@ section.tf__counter_3 {
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
+
   /*==================================
         HOME PAGE START
     ==================================*/
@@ -7023,6 +7216,7 @@ section.tf__counter_3 {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
   /*==================================
         HOME PAGE START
     ==================================*/
@@ -7527,6 +7721,7 @@ section.tf__counter_3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /*==================================
         HOME PAGE START
     ==================================*/
@@ -7535,9 +7730,11 @@ section.tf__counter_3 {
     height: 70px;
     background: var(--colorWhite);
   }
+
   .video-modal-iframe {
     height: 300px;
   }
+
   .main_menu .container {
     padding: 14px 0;
   }
@@ -8321,6 +8518,7 @@ section.tf__counter_3 {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+
   /*==================================
         HOME PAGE START
     ==================================*/
@@ -8329,9 +8527,11 @@ section.tf__counter_3 {
     height: 70px;
     background: var(--colorWhite);
   }
+
   .tf__footer_logo_area {
     margin-bottom: 15px;
   }
+
   .main_menu .container {
     padding: 14px 0;
   }
@@ -8920,7 +9120,7 @@ section.tf__counter_3 {
   /*==================================
         TEAM HOME PAGE 2 START
     ==================================*/
-  .tf__topbar_right > ul {
+  .tf__topbar_right>ul {
     justify-content: center;
   }
 
@@ -9136,9 +9336,11 @@ section.tf__counter_3 {
     font-size: 25px;
     color: var(--colorWhite);
   }
+
   .video-modal-iframe {
     height: 300px;
   }
+
   .tf__contact_3_text {
     margin-bottom: 25px;
   }
@@ -9166,6 +9368,7 @@ section.tf__counter_3 {
 }
 
 @media (max-width: 575px) {
+
   /*==================================
         HOME PAGE START
     ==================================*/
@@ -9174,15 +9377,19 @@ section.tf__counter_3 {
     height: 90px;
     background: var(--colorWhite);
   }
+
   section .container {
     padding: 0 20px;
   }
+
   .tf__banner {
     height: 750px;
   }
+
   .tf__footer_overlay .container {
     padding: 0 20px;
   }
+
   .main_menu .container {
     padding: 20px;
   }
@@ -9195,17 +9402,21 @@ section.tf__counter_3 {
     margin-top: 11px;
     padding-top: 5px;
   }
+
   .video-modal-iframe {
     height: 300px;
   }
+
   .main_menu .navbar-nav .nav-item .common_btn {
     margin-bottom: 25px;
     margin-top: 10px;
   }
+
   .tf__about_img::after,
   .tf__about_img::before {
     display: none;
   }
+
   .main_menu .navbar-nav .nav-item {
     margin-right: 0;
   }
@@ -9243,9 +9454,11 @@ section.tf__counter_3 {
   .navbar-brand {
     max-width: 160px !important;
   }
+
   .tf__footer_logo_area {
     margin-bottom: 25px;
   }
+
   .navbar-toggler {
     width: 40px;
     height: 40px;
@@ -9322,12 +9535,15 @@ section.tf__counter_3 {
     padding-left: 40px;
     max-width: 90%;
   }
+
   .mt_195 {
     margin-top: 100px;
   }
+
   .mt_190 {
     margin-top: 100px;
   }
+
   .tf__single_category_text h3 {
     font-size: 20px;
   }
@@ -9673,9 +9889,11 @@ section.tf__counter_3 {
   .tf__single_courses_img {
     height: 220px;
   }
+
   .tf__about_us_page.mt_195.xs_mt_100 {
     margin-top: 100px;
   }
+
   /*==================================
         ABOUT PAGE END
     ==================================*/
@@ -9843,9 +10061,11 @@ section.tf__counter_3 {
     margin-top: 15px;
     border: none;
   }
+
   .tf__courses_details_header.d-flex.flex-wrap.align-items-center {
     justify-content: center;
   }
+
   .tf__courses_details_header {
     padding: 30px;
   }
@@ -10008,7 +10228,7 @@ section.tf__counter_3 {
   /*==================================
         HOME PAGE 2 START
     ==================================*/
-  .tf__topbar_right > ul {
+  .tf__topbar_right>ul {
     justify-content: center;
   }
 
@@ -10275,28 +10495,36 @@ section.tf__counter_3 {
     margin-bottom: -25px;
   }
 }
+
 @media (max-width: 400px) {
   .tf__single_category_text {
     max-width: 85%;
   }
+
   .tf__breadcrumb .container::after {
     top: 105px;
   }
+
   .tf__courses_det_text .nav .nav-item a {
     margin-right: 20px;
   }
+
   .tf__banner {
     padding: 130px 0 90px;
   }
+
   .tf__banner_text h5 {
     font-size: 15px;
   }
+
   .tf__banner_text h1 {
     font-size: 50px;
   }
+
   .tf__banner_text p {
     font-size: 15px;
   }
+
   .tf__heading_area h2 {
     font-size: 30px;
   }
