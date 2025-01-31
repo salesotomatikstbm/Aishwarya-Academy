@@ -15,7 +15,7 @@ const CategoryGrid = () => {
               paddingRight: 0, 
             }}
           >
-           <div
+            <div
               className={`tf__popular_service_single ${item.color} p-3 border rounded shadow`}
               style={{
                 textAlign: "center",
@@ -29,9 +29,14 @@ const CategoryGrid = () => {
                 className="d-block mb-3"
                 style={{
                   fontSize: "2rem", 
+                  background: `url(${item.bgImage}) center/cover no-repeat`,
+                  width: "80px", // Adjust the size of the icon
+                  height: "80px", // Adjust the size of the icon
+                  borderRadius: "50%", // Make the icon circular
+                  margin: "0 auto",
                 }}
               >
-                <i className={item.iClassName}></i>
+                {/* Empty span for the background image to act as the icon */}
               </span>
               <h3
                 className="h5 font-weight-bold mb-2"

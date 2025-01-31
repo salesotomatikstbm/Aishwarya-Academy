@@ -514,7 +514,7 @@ const blogData = [
 const services = [
   {
     id: 0,
-    iClassName: "fa fa-university",
+    iClassName: "/images/tnpsc_bg.jpg",
     title: "TNPSC EXAMS",
     desc: "TNPSC Group 1,Group 2/2A , Group IV Exams",
     color: "red",
