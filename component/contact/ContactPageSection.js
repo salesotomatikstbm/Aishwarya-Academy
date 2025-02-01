@@ -28,8 +28,8 @@ const ContactPageSection = () => {
                 </div>
                 <div className="text">
                   <h3>Call</h3>
-                  <a href="callto:+880254615566">+880254615566</a>
-                  <a href="callto:+826542556455">+826542556455</a>
+                  <a href="callto:++91 9445556041">+91 9445556041</a>
+                  
                 </div>
               </div>
               <div className="tf__contact_single">
@@ -38,8 +38,8 @@ const ContactPageSection = () => {
                 </div>
                 <div className="text">
                   <h3>mail</h3>
-                  <a href="mailto:neta@eobi.com">neta@eobi.com</a>
-                  <a href="mailto:coraty@bara.com">coraty@bara.com</a>
+                  <a href="mailto:aishwaryaacademyattur@gmail.com ">aishwaryaacademyattur@gmail.com </a>
+                  
                 </div>
               </div>
               <div className="tf__contact_single">
@@ -48,7 +48,8 @@ const ContactPageSection = () => {
                 </div>
                 <div className="text">
                   <h3>address</h3>
-                  <p>52, 25 rangpur,0123 Ratrba baraj,20</p>
+                  <p>191/C, 60ft Road, Gandhinagar,Attur.636102
+                  </p>
                 </div>
               </div>
             </div>

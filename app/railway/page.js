@@ -1,4 +1,5 @@
 
+import ActivitySection2 from "@/component/activity/ActivitySection2";
 import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 
 import TrainingLevels from "@/component/course/TrainingLevels";
@@ -27,7 +28,7 @@ export default function Courses() {
          <Layout>
          <BreadcrumbSection header='RAILWAY EXAM' title='RAILWAY EXAM'/>
         <Railway />
-        <GovtService />
+        <ActivitySection2 style="tf__activities_slider_area pt_95 pb_100"/> 
         <VideoSection />
         <TrainingLevels />
         <CourseFeature />

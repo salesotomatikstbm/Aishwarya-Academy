@@ -11,11 +11,11 @@ const TopbarSection = ({ style }) => {
               <ul className="d-flex flex-wrap">
                 {/* Contact Number */}
                 <li>
-                  <a href="tel:+918610210593">+91 6383791772</a>
+                  <a href="tel:+919445556041">+91 9445556041</a>
                 </li>
                 {/* Email */}
                 <li>
-                  <a href="mailto:contact@example.com">contact@example.com</a>
+                  <a href="mailto:aishwaryaacademyattur@gmail.com ">aishwaryaacademyattur@gmail.com </a>
                 </li>
               </ul>
             </div>

@@ -28,7 +28,7 @@ export default function Courses() {
          <Layout>
          <BreadcrumbSection header='TNPSC EXAM' title='TNPSC EXAM'/>
        <TnpscExam />
-        <GovtService />
+       <ActivitySection2 style="tf__activities_slider_area pt_95 pb_100"/> 
         <VideoSection />
         <TrainingLevels />
         <CourseFeature />

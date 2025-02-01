@@ -28,7 +28,8 @@ export default function Courses() {
          <Layout>
          <BreadcrumbSection header='SSC EXAM' title='SSC EXAM'/>
       <SscExam />
-        <GovtService />
+        {/* <GovtService /> */}
+        <ActivitySection2 style="tf__activities_slider_area pt_95 pb_100"/> 
         <VideoSection />
         <TrainingLevels />
         <CourseFeature />

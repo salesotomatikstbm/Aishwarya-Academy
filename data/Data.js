@@ -558,7 +558,7 @@ const services = [
     title: "TUITIONS",
     desc: "CBSE & Matric 9th, 10th, 11th and 12th",
     color: "purple",
-    bgImage: "/images/tnpsc_bg.jpg",
+    bgImage: "/images/tution.jpg",
   },
  
 ];
@@ -2070,27 +2070,42 @@ export const whyChooseUsData = [
   {
     id: 0,
     icon: "fa fa-book",
-    title: "Group 2 Exam Preparation Batch",
+    title: "Course Validity : Life Time",
   },
   {
     id: 1,
     icon: "fa fa-graduation-cap",
-    title: "Group 4 Exam Foundation Batch",
+    title: "230 + Sessions",
   },
   {
     id: 2,
     icon: "fa fa-university",
-    title: "TNPSC Exam Coaching Batch",
+    title: "New Syllabus Based Class",
   },
   {
     id: 3,
     icon: "fa fa-books-medical",
-    title: "Police Recruitment Training Batch",
+    title: "Daily CA Class",
   },
   {
     id: 4,
     icon: "fa fa-analytics",
-    title: "Digital Marketing for TNPSC Aspirants",
+    title: "Updated Book Materials",
+  },
+  {
+    id: 5,
+    icon: "fa fa-analytics",
+    title: "Specials Class for Maths",
+  },
+  {
+    id: 6,
+    icon: "fa fa-analytics",
+    title: "500+ Topic Test",
+  },
+  {
+    id: 6,
+    icon: "fa fa-analytics",
+    title: "100+ Full Test",
   },
 ];
 

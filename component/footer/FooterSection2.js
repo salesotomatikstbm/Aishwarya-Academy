@@ -91,14 +91,14 @@ const FooterSection2 = ({ style, logo }) => {
                 <div className="col-xl-3 col-md-7 col-lg-3">
                   <div className="tf__footer_content">
                     <h3>Our Contacts</h3>
-                    <p>Address: 27 Division St, Berakuti, NY 121102, USA</p>
+                    <p>Address: 191/C, 60ft Road, Gandhinagar,Attur.636102</p>
                     <p>
-                      <span> Phone: +91 6383791772</span>
+                      <span> Phone: +91 9445556041</span>
                    
                     </p>
                     <p>
-                      <span>Email: example@mail.com </span>
-                      <span>Website: yourwebsite.com</span>
+                      <span>Email: aishwaryaacademyattur@gmail.com  </span>
+                      {/* <span>Website: yourwebsite.com</span> */}
                     </p>
                   </div>
                 </div>
@@ -117,14 +117,14 @@ const FooterSection2 = ({ style, logo }) => {
 
                 <div className="col-12">
                   <div className="tf__copyright">
-                    <p>Copyright © Aishwarya Academy all rights reserved.</p>
+                    <p>Copyright © Aishwarya Academy all rights reserved.  Designed by Otomatiks</p>
                     <ul className="d-flex flex-wrap">
-                      <li>
+                      {/* <li>
                         <a href="#">Privacy policy</a>
                       </li>
                       <li>
                         <a href="#">About</a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

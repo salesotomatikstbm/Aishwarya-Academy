@@ -26,9 +26,9 @@ const ActivitySlider = () => {
       {whyChooseUsData?.map((item) => (
         <div key={item.id}>
           <div className="tf__activities_item p-4 border rounded shadow text-center">
-            <span className="display-4 d-block mb-3">
+            {/* <span className="display-4 d-block mb-3">
               <i className={item.icon}></i>
-            </span>
+            </span> */}
             <h3 className="h5 mt-3 mb-2">{item.title}</h3>
           </div>
         </div>

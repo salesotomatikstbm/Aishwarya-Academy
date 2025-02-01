@@ -27,7 +27,7 @@ export default function Courses() {
          <Layout>
          <BreadcrumbSection header='BANK EXAM' title='BANK EXAM'/>
          <BankExam />
-        <GovtService />
+         <ActivitySection2 style="tf__activities_slider_area pt_95 pb_100"/> 
         <VideoSection />
         <TrainingLevels />
         <CourseFeature />
