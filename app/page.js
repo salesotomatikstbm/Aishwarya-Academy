@@ -33,7 +33,7 @@ export default function Home3() {
       {/* <ActivitySection2 style="tf__activities_slider_area pt_95 pb_100"/> */}
          <Achievers style="tf__team_3 pt_250 pb_100"/>
       <TeamSection style="tf__team_2 pt_100 pb_100" />
-<Test />
+{/* <Test /> */}
 
       <Testimonial />
       {/* <TestimonialSection2 /> */}
