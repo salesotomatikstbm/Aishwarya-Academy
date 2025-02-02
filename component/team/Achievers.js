@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import TeamSlider from "../slider/TeamSlider";
+
+import TeamSliderA from "../slider/TeamSliderA";
 
 const Achievers = ({ style }) => {
   return (
@@ -14,7 +15,7 @@ const Achievers = ({ style }) => {
             </div>
           </div>
         </div>
-        <TeamSlider />
+        <TeamSliderA />
       </div>
     </section>
   );

@@ -71,49 +71,49 @@ const FooterSection2 = ({ style, logo }) => {
                     <h3>Quick Links</h3>
                     <ul>
                       <li>
-                        <Link href="/courses">Government Exam Services</Link>
+                        <Link href="/about">About</Link>
                       </li>
                       <li>
-                        <Link href="/events">Upcoming Exam Events</Link>
+                        <Link href="/contact">Contact Us</Link>
                       </li>
-                      <li>
-                        <Link href="/about">About Our Coaching Institute</Link>
-                      </li>
-                      <li>
-                        <Link href="/contact">Business Contact</Link>
-                      </li>
-                      <li>
-                        <Link href="/contact">Make An Appointment</Link>
-                      </li>
+
                     </ul>
                   </div>
                 </div>
                 <div className="col-xl-3 col-md-7 col-lg-3">
                   <div className="tf__footer_content">
                     <h3>Our Contacts</h3>
-                    <p>Address: 191/C, 60ft Road, Gandhinagar,Attur.636102</p>
                     <p>
-                      <span> Phone: +91 9445556041</span>
-                   
+                      <span>
+                        Phone: <a href="tel:+919445556041">+91 9445556041</a>
+                      </span>
                     </p>
                     <p>
-                      <span>Email: aishwaryaacademyattur@gmail.com  </span>
+                      <span>
+                        Email: <a href="mailto:aishwaryaacademyattur@gmail.com">aishwaryaacademyattur@gmail.com</a>
+                      </span>
                       {/* <span>Website: yourwebsite.com</span> */}
                     </p>
+                    <p>Address: 191/C, 60ft Road, Gandhinagar,Attur.636102</p>
                   </div>
                 </div>
+
+
                 <div className="col-xl-3 col-md-5 col-lg-3">
                   <div className="tf__footer_content">
-                    <h3>News Letter</h3>
-                    <p>
-                      Stay updated with the latest news and resources for government exam preparations. Subscribe to our newsletter for tips, updates, and more!
-                    </p>
-                    <form>
-                      <input type="text" placeholder="Your Email" />
-                      <button>Send</button>
-                    </form>
+
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.27386058910278!2d78.59555281268685!3d11.596107639218305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab9d228acc8a01%3A0x6e8dbbdb6c3ba67!2sAishwarya%20Academy%20for%20Kids!5e0!3m2!1sen!2sin!4v1738476856024!5m2!1sen!2sin"
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      style={{ height: "200px", width: "300px" }} ></iframe>
                   </div>
                 </div>
+
+
+
+
 
                 <div className="col-12">
                   <div className="tf__copyright">

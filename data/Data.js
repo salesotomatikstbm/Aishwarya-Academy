@@ -1892,6 +1892,159 @@ const courseDataArray = [
 
 
 
+const teamData1 = [
+  {
+    "id": 1,
+    "imgSrc": "images/Achievers/1.jpg",
+    "name": "Gayatri R",
+    "designation": "Clear",
+    "about": "SBI Clerk Prelims Exam"
+  },
+  {
+    "id": 2,
+    "imgSrc": "images/Achievers/2.jpg",
+    "name": "Keerthana.M",
+    "designation": "Clear",
+    "about": "LIC - ADO"
+  },
+  {
+    "id": 3,
+    "imgSrc": "images/Achievers/3.jpg",
+    "name": "Nargunavathi",
+    "designation": "Clear",
+    "about": "PO - Andhra Bank"
+  },
+  {
+    "id": 4,
+    "imgSrc": "images/Achievers/4.jpg",
+    "name": "Heera",
+    "designation": "Clear",
+    "about": "Indian Bank - Clerk"
+  },
+  {
+    "id": 5,
+    "imgSrc": "images/Achievers/5.jpg",
+    "name": "Gowrishankar",
+    "designation": "Clear",
+    "about": "Bank of India - PO"
+  },
+  {
+    "id": 6,
+    "imgSrc": "images/Achievers/6.jpg",
+    "name": "Janani.S",
+    "designation": "Clear",
+    "about": "SBI Clerk Prelims Exam"
+  },
+  {
+    "id": 7,
+    "imgSrc": "images/Achievers/7.jpg",
+    "name": "Jaya Priya.L",
+    "designation": "Clear",
+    "about": "Group 2 Prelims Exam"
+  },
+  {
+    "id": 8,
+    "imgSrc": "images/Achievers/8.jpg",
+    "name": "Karthikayan.K",
+    "designation": "Clear",
+    "about": "Group 2 Prelims Exam"
+  },
+  {
+    "id": 9,
+    "imgSrc": "images/Achievers/9.jpg",
+    "name": "Kowsalya.M",
+    "designation": "Clear",
+    "about": "SBI Clerk Prelims Exam"
+  },
+  {
+    "id": 10,
+    "imgSrc": "images/Achievers/10.jpg",
+    "name": "Kumar.V",
+    "designation": "Clear",
+    "about": "Group 2 Prelims Exam"
+  },
+  {
+    "id": 11,
+    "imgSrc": "images/Achievers/11.jpg",
+    "name": "Mani.S",
+    "designation": "Clear",
+    "about": "SBI Clerk Prelims Exam"
+  },
+  {
+    "id": 12,
+    "imgSrc": "images/Achievers/12.jpg",
+    "name": "MuniShankar",
+    "designation": "Clear",
+    "about": "Pallavan Grama Bank - Scale 1 Officer, Canara Bank - Clerk"
+  },
+  {
+    "id": 13,
+    "imgSrc": "images/Achievers/13.jpg",
+    "name": "Narendran.K",
+    "designation": "Clear",
+    "about": "SBI Clerk Prelims Exam"
+  },
+  {
+    "id": 14,
+    "imgSrc": "images/Achievers/14.jpg",
+    "name": "Nithya",
+    "designation": "Clear",
+    "about": "SSC Food Corporation of India"
+  },
+  {
+    "id": 15,
+    "imgSrc": "images/Achievers/15.jpg",
+    "name": "Prabavathi",
+    "designation": "Clear",
+    "about": "Canara Bank - SO"
+  },
+  {
+    "id": 16,
+    "imgSrc": "images/Achievers/16.jpg",
+    "name": "Pradeep.R",
+    "designation": "Clear",
+    "about": "TNPSC Group IV"
+  },
+  {
+    "id": 17,
+    "imgSrc": "images/Achievers/17.jpg",
+    "name": "Praveen.S",
+    "designation": "Clear",
+    "about": "Canara Bank - SO, Bank of Baroda - Clerk"
+  },
+  {
+    "id": 18,
+    "imgSrc": "images/Achievers/18.jpg",
+    "name": "Ramya.T",
+    "designation": "Clear",
+    "about": "TNPSC Group 2 Prelims Exam"
+  },
+  {
+    "id": 19,
+    "imgSrc": "images/Achievers/19.jpg",
+    "name": "Sathya",
+    "designation": "Clear",
+    "about": "Indian Bank - Clerk, City Union Bank - Clerk"
+  },
+  {
+    "id": 20,
+    "imgSrc": "images/Achievers/20.jpg",
+    "name": "Sathya Jothi.S",
+    "designation": "Clear",
+    "about": "SBI Clerk Prelims Exam"
+  },
+  {
+    "id": 21,
+    "imgSrc": "images/Achievers/21.jpg",
+    "name": "Selvapriya.M",
+    "designation": "Clear",
+    "about": "Canara Bank - Clerk, Bank of India - SO"
+  }
+];
+
+
+
+
 
 const teamData = [
   {
@@ -2121,6 +2274,7 @@ export {
   services,
   courseDataArray,
   teamData,
+  teamData1,
   activitiesData,
   allFaqData,
 };

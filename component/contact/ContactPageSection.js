@@ -57,8 +57,8 @@ const ContactPageSection = () => {
 
           <div className="col-xl-12 wow fadeInUp">
             <div className="tf__contact_map mt_100">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29199.78758207035!2d90.43684581929195!3d23.819543211524437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c62fce7d991f%3A0xacfaf1ac8e944c05!2sBasundhara%20Residential%20Area%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1667021568123!5m2!1sen!2sbd"
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.27386058910278!2d78.59555281268685!3d11.596107639218305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab9d228acc8a01%3A0x6e8dbbdb6c3ba67!2sAishwarya%20Academy%20for%20Kids!5e0!3m2!1sen!2sin!4v1738476856024!5m2!1sen!2sin"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

@@ -4851,6 +4851,93 @@ button {
 
 /* testimonial 2 end */
 
+
+/* Scrollbar Styling */
+.custom-scroll::-webkit-scrollbar {
+  height: 5px; /* Adjust height for visibility */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #dc3545; /* Highlighted scrollbar (Red) */
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background-color: #f8f9fa; /* Light gray track */
+}
+
+/* Bottom scroll color */
+.custom-scroll::-webkit-scrollbar-corner {
+  background-color: #f8d7da; /* Bottom scrollbar corner color */
+}
+
+
+
+
+
+/* Default styles for desktop */
+.tf__single_team_img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures uniform image display */
+}
+
+.tf__single_team_text .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tf__single_team_text p {
+  font-size: 16px;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .tf__single_team {
+    padding: 5px; /* Reduce padding for better spacing */
+  }
+
+  /* Set equal height for all images */
+  .tf__single_team_img {
+    width: 100%;
+    height: 150px; /* Set fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents distortion */
+  }
+
+  .tf__single_team_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures uniform image size */
+  }
+
+  /* Reduce font size */
+  .tf__single_team_text .title {
+    font-size: 14px; /* Reduce title font size */
+  }
+
+  .tf__single_team_text p {
+    font-size: 12px; /* Reduce paragraph text size */
+  }
+
+  /* Prevents text overflow issues */
+  .team-title, 
+  .team-designation, 
+  .team-about {
+    font-size: 12px; /* Reduce text size */
+    white-space: normal; /* Allow wrapping */
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
 /* courses 2 start */
 
 .tf__courses_2 .tf__single_courses:hover .tf__single_course_header,

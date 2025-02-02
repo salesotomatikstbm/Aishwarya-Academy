@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { client } from "../cms/contentfulClient"; // Assuming you're using Contentful for CMS
+import { client } from "../cms/contentfulClient";
 
 const Testimonial = () => {
   const [videoEmbedLinks, setVideoEmbedLinks] = useState([]);
@@ -19,11 +19,11 @@ const Testimonial = () => {
         }
 
         const videoLinks = response.items.flatMap((item) => {
-          // Check all video-related fields
-          const videoFields = [item?.fields?.videolink, item?.fields?.videolink2, item?.fields?.videolink3, item?.fields?.videolink4];
+
+          const videoFields = [item?.fields?.videolink, item?.fields?.videolink2];
           return videoFields
-            .map((field) => findVideoUrl(field)) // Extract video URL from the field
-            .filter(Boolean); // Filter out any null values
+            .map((field) => findVideoUrl(field))
+            .filter(Boolean);
         });
 
         if (videoLinks.length === 0) {
@@ -35,7 +35,7 @@ const Testimonial = () => {
         const embedLinks = videoLinks.map((videoUrl) => {
           let videoId = null;
 
-          // Handle multiple YouTube URL formats
+
           if (videoUrl.includes("youtube.com/watch") || videoUrl.includes("youtu.be/")) {
             const match = videoUrl.match(/[?&]v=([^&]+)/) || videoUrl.match(/youtu\.be\/([^?]+)/);
             videoId = match ? match[1] : null;
@@ -46,7 +46,7 @@ const Testimonial = () => {
           return videoId ? `https://www.youtube.com/embed/${videoId}` : null;
         });
 
-        setVideoEmbedLinks(embedLinks.filter(Boolean)); // Remove null embed links
+        setVideoEmbedLinks(embedLinks.filter(Boolean));
       } catch (err) {
         console.error("Error fetching testimonial data:", err);
         setError(err.message || "An unexpected error occurred.");
@@ -56,22 +56,21 @@ const Testimonial = () => {
     fetchTestimonialData();
   }, []);
 
-  // Function to recursively find all YouTube video URLs within the rich text object
   const findVideoUrl = (node) => {
     if (!node) return null;
 
-    // If it's a hyperlink, check if the URL is a valid YouTube video URL
+
     if (node.nodeType === "hyperlink" && node.data?.uri) {
       const url = node.data.uri;
       if (url.includes("youtube.com/watch") || url.includes("youtu.be/")) {
-        return url; // Return the YouTube URL
+        return url;
       }
     }
 
     if (node.content && Array.isArray(node.content)) {
       for (const childNode of node.content) {
         const videoUrl = findVideoUrl(childNode);
-        if (videoUrl) return videoUrl; // If we find a video URL, return it
+        if (videoUrl) return videoUrl;
       }
     }
 
@@ -96,24 +95,29 @@ const Testimonial = () => {
           </div>
 
           <div className="row my-5">
-  {videoEmbedLinks.map((link, index) => (
-    <div
-      className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4" // 3 per row on desktop, 2 per row on mobile
-      key={index}
-    >
-      <div className="ratio ratio-16x9">
-        <iframe
-          src={link}
-          title={`Testimonial Video ${index + 1}`}
-          allowFullScreen
-          className="rounded"
-        ></iframe>
-      </div>
-    </div>
-  ))}
-</div>
+            {videoEmbedLinks.map((link, index) => (
+              <div
+                className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4"
+                key={index}
+              >
+                <div className="ratio ratio-16x9">
 
 
+                <iframe
+      src={`${link}`}
+      title={`Testimonial Video ${index + 1}`}
+      allowFullScreen
+      className="rounded video-iframe"  // Added class here
+    ></iframe>
+
+    
+                </div>
+
+
+
+              </div>
+            ))}
+          </div>
         </div>
       ) : (
         <div className="container my-5">

@@ -5,19 +5,16 @@ import { useState } from "react";
 import Link from "next/link";
 
 const CourseSection2 = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState(courseDataArray[0]?.category || "");
 
-  // Get all unique categories and add "All" as the first option
-  const categories = ["All", ...new Set(courseDataArray.map((item) => item.category))];
+  // Get all unique categories
+  const categories = [...new Set(courseDataArray.map((item) => item.category))];
 
   // Filter courses based on the selected category
-  const filteredCourses =
-    activeCategory === "All"
-      ? courseDataArray
-      : courseDataArray.filter((item) => item.category === activeCategory);
+  const filteredCourses = courseDataArray.filter((item) => item.category === activeCategory);
 
   return (
-    <section className="tf__courses_2 tf__courses_3 overflow-hidden mt_95">
+    <section className="tf__courses_2 tf__courses_3 overflow-hidden mt_95 bg-light py-5">
       <div className="container overflow-hidden">
         <div className="row wow fadeInUp">
           <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto text-center">
@@ -28,15 +25,36 @@ const CourseSection2 = () => {
           </div>
         </div>
 
-        {/* Category Filter Buttons */}
-       {/* Category Filter Buttons */}
-<div className="d-flex flex-wrap justify-content-center mb-4">
-  <div className="category-tabs-container">
+        {/* Desktop Category Filter */}
+        <div className="d-none d-md-flex flex-wrap justify-content-center mb-4 ">
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={`btn mx-2 mb-3 ${activeCategory === category ? "bg-danger text-white" : "bg-white text-dark border"}`}
+              onClick={() => setActiveCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+      {/* Mobile Scrollable Category Tabs */}
+<div className="d-block d-md-none mb-4">
+  <div
+    className="d-flex overflow-auto pb-2 px-2"
+    style={{
+      whiteSpace: "nowrap",
+      scrollbarWidth: "none",
+ 
+      borderRadius: "2px", // Optional rounded corners
+    }}
+  >
     {categories.map((category) => (
       <button
         key={category}
-        className={`btn tf__button_area mx-2 mb-3 ${activeCategory === category ? "active" : ""}`}
+        className={`btn mx-2 ${activeCategory === category ? "bg-danger text-white" : "bg-white text-dark border"}`}
         onClick={() => setActiveCategory(category)}
+        style={{ flexShrink: 0 }}
       >
         {category}
       </button>
@@ -45,13 +63,12 @@ const CourseSection2 = () => {
 </div>
 
 
-
         {/* Desktop View */}
-        <div className="d-none d-md-block"> {/* Only visible on desktop */}
+        <div className="d-none d-md-block">
           <div className="row">
             {filteredCourses.map((item) => (
               <div
-                className="col-xl-2 col-lg-2 col-md-4 col-sm-6 wow fadeInUp mb-4" // 5 courses per row on desktop
+                className="col-xl-2 col-lg-2 col-md-4 col-sm-6 wow fadeInUp mb-4"
                 key={item.id}
               >
                 <div className="tf__single_courses" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden', marginBottom: '2px' }}>
@@ -65,7 +82,7 @@ const CourseSection2 = () => {
                           maxWidth: '100%',
                           maxHeight: '100%',
                           display: 'block',
-                          margin: '0 auto', // Centers the image horizontally
+                          margin: '0 auto',
                         }}
                       />
                     </div>
@@ -79,14 +96,14 @@ const CourseSection2 = () => {
           </div>
         </div>
 
-      {/* Mobile View */}
-      <div className="d-block d-md-none"> {/* Only visible on mobile */}
+        {/* Mobile View */}
+        <div className="d-block d-md-none">
           <div className="row">
             {filteredCourses.map((item) => (
               <div
-                className="col-6 wow fadeInUp mb-4"  // 2 courses per row on mobile (col-6 means 50% width)
+                className="col-6 wow fadeInUp mb-4"
                 key={item.id}
-                style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} // Ensures the courses are centered
+                style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
               >
                 <div className="tf__single_courses" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
                   <Link href={`/courses/${item.slug}`} className="d-block">
@@ -96,11 +113,11 @@ const CourseSection2 = () => {
                         alt={item.title}
                         style={{
                           objectFit: 'contain',
-                          width: '100%',  // Make image responsive
+                          width: '100%',
                           height: 'auto',
-                          maxHeight: '200px', // Fixed height for better alignment
+                          maxHeight: '200px',
                           display: 'block',
-                          margin: '0 auto', // Centers the image horizontally
+                          margin: '0 auto',
                         }}
                       />
                     </div>
@@ -113,6 +130,7 @@ const CourseSection2 = () => {
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );
