@@ -25,21 +25,21 @@ const CounterSection = () => {
                   <ul className=" d-flex flex-wrap">
                     <li className="tf__single_counter">
                       <h2 className="counter">
-                        <CountUp end={500} />
+                        <CountUp end={200} />
                       </h2>
-                      <h4>Students Successfully Trained</h4>
+                      <h4>Students Cleared Exam</h4>
                     </li>
                     <li className="tf__single_counter">
                       <h2 className="counter">
-                        <CountUp end={1200} />
+                        <CountUp end={10000} />
                       </h2>
-                      <h4>Mock Exams Conducted</h4>
+                      <h4>Mock Test</h4>
                     </li>
                     <li className="tf__single_counter">
                       <h2 className="counter">
-                        <CountUp end={300} />
+                        <CountUp end={4000} />
                       </h2>
-                      <h4>Students Cleared Government Exams</h4>
+                      <h4>Hours Of Teaching</h4>
                     </li>
                   </ul>
                 </div>

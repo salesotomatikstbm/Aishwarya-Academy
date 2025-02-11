@@ -6204,7 +6204,7 @@ select.select_js.form-select {
 
 .tf__single_counter h2 span::after {
   position: absolute;
-  content: "K+";
+  content: "+";
   font-size: 50px;
   font-weight: 700;
   color: var(--colorWhite);

@@ -18,7 +18,7 @@ const FooterSection2 = ({ style, logo }) => {
               Join our expert-led coaching for TNPSC, Bank, Railway exams, and more. We provide tailored resources and mock exams to help you succeed.
             </p>
             <a className="apply_btn" href="#">
-              Apply Now
+              Join Now
             </a>
           </div>
         </div>
@@ -37,33 +37,40 @@ const FooterSection2 = ({ style, logo }) => {
                     <p>
                       We provide expert guidance for all major government exams like TNPSC, Bank PO, and Railway, helping students prepare with confidence.
                     </p>
+
+
+
                     <ul className="d-flex flex-wrap">
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-linkedin-in"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-pinterest-p"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-google-plus-g"></i>
-                        </a>
-                      </li>
-                    </ul>
+  <li>
+    <a href="#">
+      <i className="fab fa-facebook-f"></i>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i className="fab fa-youtube"></i>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i className="fab fa-instagram"></i>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i className="fab fa-whatsapp"></i>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i className="fab fa-telegram-plane"></i>
+    </a>
+  </li>
+</ul>
+
+
+
+
                   </div>
                 </div>
                 <div className="col-xl-2 col-md-5 col-lg-3">
@@ -83,7 +90,7 @@ const FooterSection2 = ({ style, logo }) => {
                 <div className="col-xl-3 col-md-7 col-lg-3">
                   <div className="tf__footer_content">
                     <h3>Our Contacts</h3>
-                    <p>
+                    <p >
                       <span>
                         Phone: <a href="tel:+919445556041">+91 9445556041</a>
                       </span>

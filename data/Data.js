@@ -568,7 +568,7 @@ const courseDataArray = [
 
   {
     "id": 0,
-    "imgSrc": "images/courses_img_13.jpg",
+    "imgSrc": "images/sbi.jpg",
     "color": "green",
     "slug": "sbi-clerk-exam-preparation",
     "title": "SBI PO",
@@ -607,7 +607,7 @@ const courseDataArray = [
   },
     {
       "id": 1,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/sbi.jpg",
       "color": "green",
       "slug": "sbi-clerk",
       "title": "SBI Clerk",
@@ -646,7 +646,7 @@ const courseDataArray = [
     },
     {
       "id": 2,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/rbi.jpg",
       "color": "red",
       "slug": "rbi-assistant",
       "title": "RBI Assistant",
@@ -766,7 +766,7 @@ const courseDataArray = [
     },
     {
       "id": 5,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/ibps.jpg",
       "color": "purple",
       "slug": "ibps-clerk",
       "title": "IBPS Clerk",
@@ -805,7 +805,7 @@ const courseDataArray = [
     },
     {
       "id": 6,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/ibps.jpg",
       "color": "yellow",
       "slug": "ibps-po",
       "title": "IBPS PO",
@@ -844,7 +844,7 @@ const courseDataArray = [
       ]
     }, {
       "id": 7,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/ibps.jpg",
       "color": "green",
       "slug": "ibps-rrb-clerk",
       "title": "IBPS RRB Clerk",
@@ -883,7 +883,7 @@ const courseDataArray = [
     },
     {
       "id": 8,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/ibps.jpg",
       "color": "blue",
       "slug": "ibps-rrb-po",
       "title": "IBPS RRB PO",
@@ -922,7 +922,7 @@ const courseDataArray = [
     },
     {
       "id": 9,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/indian.jpg",
       "color": "orange",
       "slug": "indian-bank-po",
       "title": "Indian Bank PO",
@@ -961,7 +961,7 @@ const courseDataArray = [
     },
     {
       "id": 10,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/lic.jpg",
       "color": "yellow",
       "slug": "lic-aao",
       "title": "LIC AAO",
@@ -1000,7 +1000,7 @@ const courseDataArray = [
     },
     {
       "id": 11,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/lic.jpg",
       "color": "purple",
       "slug": "lic-ado",
       "title": "LIC ADO",
@@ -1039,7 +1039,7 @@ const courseDataArray = [
     },
     {
       "id": 12,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/niacl.jpg",
       "color": "red",
       "slug": "niacl-ao",
       "title": "NIACL AO",
@@ -1077,7 +1077,7 @@ const courseDataArray = [
       ]
     }, {
       "id": 13,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/niacl.jpg",
       "color": "green",
       "slug": "niacl-assistant",
       "title": "NIACL Assistant",
@@ -1116,7 +1116,7 @@ const courseDataArray = [
     },
     {
       "id": 14,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/nicl.jpg",
       "color": "blue",
       "slug": "nicl-ao",
       "title": "NICL AO",
@@ -1155,7 +1155,7 @@ const courseDataArray = [
     },
     {
       "id": 15,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/nicl.jpg",
       "color": "orange",
       "slug": "nicl-assistant",
       "title": "NICL Assistant",
@@ -1194,7 +1194,7 @@ const courseDataArray = [
     },
     {
       "id": 16,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/epfo.jpg",
       "color": "yellow",
       "slug": "epfo-assistant",
       "title": "EPFO Assistant",
@@ -1233,7 +1233,7 @@ const courseDataArray = [
     },
     {
       "id": 17,
-      "imgSrc": "images/courses_img_13.jpg",
+      "imgSrc": "images/esic.jpg",
       "color": "purple",
       "slug": "esic-stenographer",
       "title": "ESIC Stenographer",
@@ -1276,6 +1276,120 @@ const courseDataArray = [
 
 
     
+    
+
+      {
+        "id": 27,
+        "imgSrc": "images/courses_img_15.jpg",
+        "color": "red",
+        "slug": "tnpsc-group-2",
+        "title": "TNPSC Group 2",
+        "category": "TNPSC EXAMS",
+        "price": "₹5000.00",
+        "instructor": "Aishwarya Academy",
+        "lessons": "28 lessons",
+        "description": "Complete preparation for TNPSC Group 2 exam focusing on general studies, reasoning, and current affairs.",
+        "rating": 4.5,
+        "students": "300+ students",
+        "instructorImg": "images/team_15.jpg",
+        "review": 120,
+        "date": "15 May 2023",
+        "disc1": "This course offers in-depth preparation for TNPSC Group 2 exam, including all subjects such as general studies, aptitude, reasoning, and current affairs.",
+        "disc2": "Mock tests and practice exams ensure a complete understanding of the exam pattern and types of questions.",
+        "syllabus": [
+          "Introduction to TNPSC Group 2 Exam",
+          "General Studies: History and Geography",
+          "Aptitude and Reasoning",
+          "General Science and Technology",
+          "Current Affairs",
+          "Tamil Language and Literature",
+          "Mock Tests and Practice Papers"
+        ],
+        "benefits": [
+          "Comprehensive syllabus coverage",
+          "Expert guidance and personalized feedback",
+          "Mock exams for real exam simulation",
+          "Updated study resources",
+          "Time management strategies",
+          "Career guidance and interview preparation",
+          "24/7 student support"
+        ]
+      },
+      {
+        "id": 28,
+        "imgSrc": "images/courses_img_15.jpg",
+        "color": "blue",
+        "slug": "tnpsc-group-4",
+        "title": "TNPSC Group 4",
+        "category": "TNPSC EXAMS",
+        "price": "₹5000.00",
+        "instructor": "Aishwarya Academy",
+        "lessons": "26 lessons",
+        "description": "Complete guide for TNPSC Group 4 exam preparation, covering general studies, reasoning, and Tamil language.",
+        "rating": 4.6,
+        "students": "250+ students",
+        "instructorImg": "images/team_15.jpg",
+        "review": 110,
+        "date": "18 May 2023",
+        "disc1": "This course prepares students for TNPSC Group 4 exam, focusing on general studies, reasoning, and Tamil language skills.",
+        "disc2": "Mock exams and practice sessions to ensure a complete understanding of the exam structure and improve performance.",
+        "syllabus": [
+          "Introduction to TNPSC Group 4 Exam",
+          "General Studies: Indian Polity and Economy",
+          "Reasoning and Aptitude",
+          "General Science",
+          "Tamil Language and Literature",
+          "Mock Tests and Practice Papers"
+        ],
+        "benefits": [
+          "Comprehensive syllabus and preparation",
+          "Mock exams for better exam readiness",
+          "Personalized feedback from expert instructors",
+          "Updated study materials and resources",
+          "Time management techniques for exams",
+          "Career guidance and post-exam opportunities",
+          "24/7 student support"
+        ]
+      },
+      {
+        "id": 29,
+        "imgSrc": "images/courses_img_15.jpg",
+        "color": "green",
+        "slug": "tnusrb-si",
+        "title": "TNUSRB SI",
+        "category": "TNPSC EXAMS",
+        "price": "₹5000.00",
+        "instructor": "Aishwarya Academy",
+        "lessons": "30 lessons",
+        "description": "Preparation for TNUSRB Sub-Inspector (SI) exam, focusing on general studies, reasoning, and physical fitness.",
+        "rating": 4.7,
+        "students": "350+ students",
+        "instructorImg": "images/team_15.jpg",
+        "review": 150,
+        "date": "22 May 2023",
+        "disc1": "This course is designed to prepare candidates for the TNUSRB Sub-Inspector exam with a focus on physical fitness, general studies, and reasoning.",
+        "disc2": "Mock exams and physical fitness practice sessions to ensure comprehensive preparation for the exam.",
+        "syllabus": [
+          "Introduction to TNUSRB SI Exam",
+          "General Studies: History, Geography, and Economy",
+          "Reasoning and Analytical Ability",
+          "Physical Fitness Training and Practice",
+          "Current Affairs and General Knowledge",
+          "Mock Tests and Practice Papers"
+        ],
+        "benefits": [
+          "Complete coverage of syllabus topics",
+          "Mock exams for real exam simulation",
+          "Expert guidance and personalized feedback",
+          "Physical fitness training sessions",
+          "Updated study materials and resources",
+          "Time management strategies for success",
+          "24/7 student support"
+        ]
+      },
+
+
+
       {
         "id": 18,
         "imgSrc": "images/courses_img_14.jpg",
@@ -1612,120 +1726,6 @@ const courseDataArray = [
         ]
       },
     
-    
-
-      {
-        "id": 27,
-        "imgSrc": "images/courses_img_15.jpg",
-        "color": "red",
-        "slug": "tnpsc-group-2",
-        "title": "TNPSC Group 2",
-        "category": "TNPSC EXAMS",
-        "price": "₹5000.00",
-        "instructor": "Aishwarya Academy",
-        "lessons": "28 lessons",
-        "description": "Complete preparation for TNPSC Group 2 exam focusing on general studies, reasoning, and current affairs.",
-        "rating": 4.5,
-        "students": "300+ students",
-        "instructorImg": "images/team_15.jpg",
-        "review": 120,
-        "date": "15 May 2023",
-        "disc1": "This course offers in-depth preparation for TNPSC Group 2 exam, including all subjects such as general studies, aptitude, reasoning, and current affairs.",
-        "disc2": "Mock tests and practice exams ensure a complete understanding of the exam pattern and types of questions.",
-        "syllabus": [
-          "Introduction to TNPSC Group 2 Exam",
-          "General Studies: History and Geography",
-          "Aptitude and Reasoning",
-          "General Science and Technology",
-          "Current Affairs",
-          "Tamil Language and Literature",
-          "Mock Tests and Practice Papers"
-        ],
-        "benefits": [
-          "Comprehensive syllabus coverage",
-          "Expert guidance and personalized feedback",
-          "Mock exams for real exam simulation",
-          "Updated study resources",
-          "Time management strategies",
-          "Career guidance and interview preparation",
-          "24/7 student support"
-        ]
-      },
-      {
-        "id": 28,
-        "imgSrc": "images/courses_img_15.jpg",
-        "color": "blue",
-        "slug": "tnpsc-group-4",
-        "title": "TNPSC Group 4",
-        "category": "TNPSC EXAMS",
-        "price": "₹5000.00",
-        "instructor": "Aishwarya Academy",
-        "lessons": "26 lessons",
-        "description": "Complete guide for TNPSC Group 4 exam preparation, covering general studies, reasoning, and Tamil language.",
-        "rating": 4.6,
-        "students": "250+ students",
-        "instructorImg": "images/team_15.jpg",
-        "review": 110,
-        "date": "18 May 2023",
-        "disc1": "This course prepares students for TNPSC Group 4 exam, focusing on general studies, reasoning, and Tamil language skills.",
-        "disc2": "Mock exams and practice sessions to ensure a complete understanding of the exam structure and improve performance.",
-        "syllabus": [
-          "Introduction to TNPSC Group 4 Exam",
-          "General Studies: Indian Polity and Economy",
-          "Reasoning and Aptitude",
-          "General Science",
-          "Tamil Language and Literature",
-          "Mock Tests and Practice Papers"
-        ],
-        "benefits": [
-          "Comprehensive syllabus and preparation",
-          "Mock exams for better exam readiness",
-          "Personalized feedback from expert instructors",
-          "Updated study materials and resources",
-          "Time management techniques for exams",
-          "Career guidance and post-exam opportunities",
-          "24/7 student support"
-        ]
-      },
-      {
-        "id": 29,
-        "imgSrc": "images/courses_img_15.jpg",
-        "color": "green",
-        "slug": "tnusrb-si",
-        "title": "TNUSRB SI",
-        "category": "TNPSC EXAMS",
-        "price": "₹5000.00",
-        "instructor": "Aishwarya Academy",
-        "lessons": "30 lessons",
-        "description": "Preparation for TNUSRB Sub-Inspector (SI) exam, focusing on general studies, reasoning, and physical fitness.",
-        "rating": 4.7,
-        "students": "350+ students",
-        "instructorImg": "images/team_15.jpg",
-        "review": 150,
-        "date": "22 May 2023",
-        "disc1": "This course is designed to prepare candidates for the TNUSRB Sub-Inspector exam with a focus on physical fitness, general studies, and reasoning.",
-        "disc2": "Mock exams and physical fitness practice sessions to ensure comprehensive preparation for the exam.",
-        "syllabus": [
-          "Introduction to TNUSRB SI Exam",
-          "General Studies: History, Geography, and Economy",
-          "Reasoning and Analytical Ability",
-          "Physical Fitness Training and Practice",
-          "Current Affairs and General Knowledge",
-          "Mock Tests and Practice Papers"
-        ],
-        "benefits": [
-          "Complete coverage of syllabus topics",
-          "Mock exams for real exam simulation",
-          "Expert guidance and personalized feedback",
-          "Physical fitness training sessions",
-          "Updated study materials and resources",
-          "Time management strategies for success",
-          "24/7 student support"
-        ]
-      },
-
-
-
 
 
  

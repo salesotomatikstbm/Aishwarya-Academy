@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="tf__about mt_100 xs_mt_195">
+    <section className="tf__about ">
       <div className="container">
         {/* <div className="tf__about_top wow fadeInUp">
           <div className="row">
@@ -47,8 +47,8 @@ const AboutSection = () => {
                 strategic teaching methods ensure success for every student.
               </p>
               <ul style={{ textAlign: "justify" }}>
-                <li>Expert coaching for TNPSC exams with a focus on practical knowledge.</li>
-                <li>Comprehensive preparation for Banking exams with a high success rate.</li>
+                <li>Expert coaching for GOVT exams with a focus on practical knowledge.</li>
+                
                 <li>In-depth Railway exam coaching for aspiring candidates.</li>
                 <li>Personalized study plans and mentorship for each student.</li>
                 <li>Regular mock tests to assess and improve student performance.</li>
