@@ -76,7 +76,7 @@ body {
   scroll-behavior: smooth;
   font-family: var(--paraFont);
   color: var(--paraColor);
-  background-color: #D3D3D3;
+  background-color: #EEEEEE ;
 }
 
 img {
@@ -4586,7 +4586,7 @@ button {
 }
 
 .tf__popular_categories_2_area {
-  background-color: #D3D3D3;
+  background-color: #EEEEEE ;
   
   border-top: 7px solid var(--colorBlue);
   
