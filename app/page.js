@@ -12,6 +12,7 @@ import VideoModal from "@/component/modal/VideoModal";
 import NavbarSection from "@/component/navbar/NavbarSection";
 import Achievers from "@/component/team/Achievers";
 import TeamSection from "@/component/team/TeamSection";
+import TestimonialSection2 from "@/component/testimonial/TestimonialSection2";
 
 import TopbarSection from "@/component/topbar/TopbarSection";
 import ScrollToTopButton from "@/component/utils/ScrollToTopButton";
@@ -36,8 +37,9 @@ export default function Home3() {
       
 
       <Testimonial />
-      {/* <TestimonialSection2 /> */}
+
       <CourseSection2 />
+      <TestimonialSection2 />
       <FooterSection2 style="tf__footer_3" logo="images/footer_logo3.png" />
       <VideoModal />
       <ScrollToTopButton style="style-3" />

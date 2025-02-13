@@ -7,12 +7,12 @@ const TestimonialSlider2 = () => {
   return (
     <Slider
       className="row testi_slider_2"
-      slidesToShow={3} // Set the number of slides to show
+      slidesToShow={3}
       infinite={true}
       dots={true}
       autoplay={true}
       arrows={false}
-      slidesToScroll={1} // Set to 1 to scroll one slide at a time
+      slidesToScroll={1}
       responsive={[
         {
           breakpoint: 1400,
@@ -48,14 +48,19 @@ const TestimonialSlider2 = () => {
     >
       {testimonialData.map((item) => (
         <div className="col-xl-4 wow fadeInUp" key={item.id}>
-          <div className="tf__single_testimonial_2 tf__single_testimonial">
+          <div
+            className="tf__single_testimonial_2 tf__single_testimonial border p-3 rounded shadow-sm"
+            style={{
+              border: "2px solid #ddd",
+              borderRadius: "10px",
+              padding: "20px",
+              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+            }}
+          >
             <div className="icon">
               <i className="fas fa-quote-left"></i>
             </div>
             <p className="description">{item.desc}</p>
-            <div className="img">
-              <img src={item.imgSrc} alt="client" className="img-f;uid w-100" />
-            </div>
             <h3 className="title">{item.name}</h3>
             <p className="designation">{item.designation}</p>
           </div>
