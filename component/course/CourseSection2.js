@@ -19,8 +19,8 @@ const CourseSection2 = () => {
         <div className="row wow fadeInUp">
           <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto text-center">
             <div className="tf__heading_area mb-4">
-              <h5>OUR POPULAR COURSES</h5>
-              <h2>Educational For Students Popular Courses</h2>
+             
+              <h2>our popular courses</h2>
             </div>
           </div>
         </div>

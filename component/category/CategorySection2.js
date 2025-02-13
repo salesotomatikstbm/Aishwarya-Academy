@@ -11,8 +11,8 @@ const CategorySection2 = () => {
           <div className="row wow fadeInUp">
             <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto">
               <div className="tf__heading_area mb_40">
-                <h5>OUR COURSE CATEGORIES</h5>
-                <h2>We success for categories creative students.</h2>
+               
+                <h2>Your Path to Exam Excellence Starts Here</h2>
               </div>
             </div>
           </div>

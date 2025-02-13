@@ -33,6 +33,10 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
         <li className="nav-item">
           <Navlink href="/about">about us</Navlink>
         </li>
+
+
+
+{/* 
         <li className="nav-item">
           <a className="nav-link">
             Courses <i className="fa fa-angle-down"></i>
@@ -62,50 +66,19 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
               <SubNavlink href="/railway">RAILWAY</SubNavlink>
             </li>
           </ul>
-          {/* <ul className="tf__droap_menu">
-            <li>
-              <SubNavlink href="/courses/development-theory-learn">
-                courses details
-              </SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/blog/learn-with-these-award-winning-best-blog-collage-courses">
-                blog details
-              </SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/events">event</SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/events/outdoor-this-games">
-                event details
-              </SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/team">team</SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/team/john-smith">team details </SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/faq">FAQs</SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/sign-in">sign in</SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/sign-up">sign up</SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/terms-condition">
-                terms and condition
-              </SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/privacy-policy">privacy policy</SubNavlink>
-            </li>
-          </ul> */}
-        </li>
+         
+        </li> */}
+
+
+
+
+
+
+
+
+
+
+        
         {/* <li className="nav-item">
           <Navlink href="/courses">courses</Navlink>
         </li> */}

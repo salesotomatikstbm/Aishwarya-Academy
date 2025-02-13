@@ -88,8 +88,8 @@ const Testimonial = () => {
           <div className="row wow fadeInUp">
             <div className="col-xl-6 col-xxl-5 col-md-8 col-lg-6 m-auto">
               <div className="tf__heading_area mb_25">
-                <h5>OUR Testimonials</h5>
-                <h2>We have helped create clients say me.</h2>
+                
+                <h2>Our Latest YouTube Videos</h2>
               </div>
             </div>
           </div>

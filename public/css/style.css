@@ -2943,30 +2943,36 @@ button {
 /* popular services end */
 .category-tabs-container {
   display: flex;
-  overflow-x: auto; /* Allows horizontal scrolling */
+  overflow-x: auto;
+  /* Allows horizontal scrolling */
   padding-bottom: 10px;
 }
 
 .category-tabs-container::-webkit-scrollbar {
-  height: 8px; /* Optional: to customize the appearance of the scrollbar */
+  height: 8px;
+  /* Optional: to customize the appearance of the scrollbar */
 }
 
 .category-tabs-container::-webkit-scrollbar-thumb {
-  background-color: #888; /* Optional: scrollbar color */
+  background-color: #888;
+  /* Optional: scrollbar color */
   border-radius: 10px;
 }
 
 .category-tabs-container::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Optional: scrollbar hover color */
+  background-color: #555;
+  /* Optional: scrollbar hover color */
 }
 
 @media (max-width: 768px) {
   .category-tabs-container {
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
   }
 
   .category-tabs-container button {
-    white-space: nowrap; /* Prevent text from wrapping within buttons */
+    white-space: nowrap;
+    /* Prevent text from wrapping within buttons */
   }
 }
 
@@ -4854,21 +4860,25 @@ button {
 
 /* Scrollbar Styling */
 .custom-scroll::-webkit-scrollbar {
-  height: 5px; /* Adjust height for visibility */
+  height: 5px;
+  /* Adjust height for visibility */
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
-  background-color: #dc3545; /* Highlighted scrollbar (Red) */
+  background-color: #dc3545;
+  /* Highlighted scrollbar (Red) */
   border-radius: 10px;
 }
 
 .custom-scroll::-webkit-scrollbar-track {
-  background-color: #f8f9fa; /* Light gray track */
+  background-color: #f8f9fa;
+  /* Light gray track */
 }
 
 /* Bottom scroll color */
 .custom-scroll::-webkit-scrollbar-corner {
-  background-color: #f8d7da; /* Bottom scrollbar corner color */
+  background-color: #f8d7da;
+  /* Bottom scrollbar corner color */
 }
 
 
@@ -4879,7 +4889,8 @@ button {
 .tf__single_team_img img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures uniform image display */
+  object-fit: cover;
+  /* Ensures uniform image display */
 }
 
 .tf__single_team_text .title {
@@ -4894,40 +4905,48 @@ button {
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
   .tf__single_team {
-    padding: 5px; /* Reduce padding for better spacing */
+    padding: 5px;
+    /* Reduce padding for better spacing */
   }
 
   /* Set equal height for all images */
   .tf__single_team_img {
     width: 100%;
-    height: 150px; /* Set fixed height */
+    height: 150px;
+    /* Set fixed height */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevents distortion */
+    overflow: hidden;
+    /* Prevents distortion */
   }
 
   .tf__single_team_img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures uniform image size */
+    object-fit: cover;
+    /* Ensures uniform image size */
   }
 
   /* Reduce font size */
   .tf__single_team_text .title {
-    font-size: 14px; /* Reduce title font size */
+    font-size: 14px;
+    /* Reduce title font size */
   }
 
   .tf__single_team_text p {
-    font-size: 12px; /* Reduce paragraph text size */
+    font-size: 12px;
+    /* Reduce paragraph text size */
   }
 
   /* Prevents text overflow issues */
-  .team-title, 
-  .team-designation, 
+  .team-title,
+  .team-designation,
   .team-about {
-    font-size: 12px; /* Reduce text size */
-    white-space: normal; /* Allow wrapping */
+    font-size: 12px;
+    /* Reduce text size */
+    white-space: normal;
+    /* Allow wrapping */
     text-align: center;
   }
 }
@@ -5353,6 +5372,7 @@ button {
   margin-top: 115px;
   margin-bottom: 345px;
   position: relative;
+ 
 }
 
 .home_3 .tf__banner_text h5,
@@ -6204,7 +6224,7 @@ select.select_js.form-select {
 
 .tf__single_counter h2 span::after {
   position: absolute;
-  content: "+";
+  content: "k+";
   font-size: 50px;
   font-weight: 700;
   color: var(--colorWhite);
@@ -6302,11 +6322,13 @@ select.select_js.form-select {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 320px; /* Ensure equal height for all boxes */
+    height: 320px;
+    /* Ensure equal height for all boxes */
   }
 
   .tf__single_team_img {
-    height: 180px; /* Reduce image height */
+    height: 180px;
+    /* Reduce image height */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -6317,11 +6339,13 @@ select.select_js.form-select {
   .tf__single_team_img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image fits the space uniformly */
+    object-fit: cover;
+    /* Ensures image fits the space uniformly */
   }
 
   .tf__single_team_text {
-    flex-grow: 1; /* Makes the text area flexible */
+    flex-grow: 1;
+    /* Makes the text area flexible */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6334,26 +6358,33 @@ select.select_js.form-select {
 @media (max-width: 768px) {
   .tf__single_team_text {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: space-between; /* Space out the content */
-    align-items: center; /* Center vertically */
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+    justify-content: space-between;
+    /* Space out the content */
+    align-items: center;
+    /* Center vertically */
     padding: 5px;
     text-align: center;
   }
 
   .tf__single_team_text span {
     display: inline-block;
-    margin: 0 5px; /* Space between the span elements */
-    white-space: nowrap; /* Prevent text wrapping */
+    margin: 0 5px;
+    /* Space between the span elements */
+    white-space: nowrap;
+    /* Prevent text wrapping */
     overflow: hidden;
-    text-overflow: ellipsis; /* Ensure the text doesn't overflow */
+    text-overflow: ellipsis;
+    /* Ensure the text doesn't overflow */
   }
 }
 
 
 @media (max-width: 768px) {
   .col-sm-6 {
-    width: 50%; /* Ensure 2 videos per row on small screens */
+    width: 50%;
+    /* Ensure 2 videos per row on small screens */
   }
 }
 

@@ -10,13 +10,11 @@ const CounterSection = () => {
           <div className="row">
             <div className="col-xxl-6 col-lg-8 wow fadeInUp">
               <div className="tf__counter_3_text">
-                <div className="tf__heading_area tf__heading_area_left mb_25">
-                  <h5>OUR SUCCESSFUL TRAINING</h5>
-                  <h2>Complete Preparation for Government Exams</h2>
+                <div className="tf__heading_area tf__heading_area_left mb_40">
+                 
+                  <h2>Our achievements and milestones in numbers</h2>
                 </div>
-                <p>
-                  Offering top-notch training, guidance, and support to help students excel in government exams and secure their future.
-                </p>
+               
               </div>
             </div>
             <div className="col-xl-9 wow fadeInUp">
@@ -31,13 +29,13 @@ const CounterSection = () => {
                     </li>
                     <li className="tf__single_counter">
                       <h2 className="counter">
-                        <CountUp end={10000} />
+                        <CountUp end={100} />
                       </h2>
                       <h4>Mock Test</h4>
                     </li>
                     <li className="tf__single_counter">
                       <h2 className="counter">
-                        <CountUp end={4000} />
+                        <CountUp end={4} />
                       </h2>
                       <h4>Hours Of Teaching</h4>
                     </li>

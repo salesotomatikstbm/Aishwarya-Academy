@@ -36,13 +36,13 @@ const TeamSlider = () => {
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 2, // Now shows 2 slides on mobile
+            slidesToShow: 1, // Now shows 2 slides on mobile
           },
         },
         {
           breakpoint: 576,
           settings: {
-            slidesToShow: 2, // Ensuring 2 slides for small screens
+            slidesToShow: 1, // Ensuring 2 slides for small screens
           },
         },
       ]}
@@ -57,13 +57,13 @@ const TeamSlider = () => {
                 className="img-fluid w-100"
               />
             </div>
-            <div className="tf__single_team_text">
+            {/* <div className="tf__single_team_text">
               <Link className="title" href={`/team/${item.slug}`}>
                 {item.name}
               </Link>
               <p>{item.designation}</p>
               <p>{item.about}</p>
-            </div>
+            </div> */}
           </div>
         </div>
       ))}
