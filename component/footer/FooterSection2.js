@@ -77,18 +77,18 @@ const FooterSection2 = ({ style, logo }) => {
                     <h3>Our Contacts</h3>
                     <p>
                       <span>
-                        <i className="fas fa-phone-alt"></i>
+                        <i className="fas fa-phone-alt">  </i>  +91 9445556041
                         
-                        <a href="tel:+919445556041">   +91 9445556041</a>
+                        {/* <a href="tel:+919445556041">   +91 9445556041</a> */}
                       </span>
                     </p>
                     <p>
                       <span>
-                        <i className="fas fa-envelope"></i>
-                        <a href="mailto:aishwaryaacademyattur@gmail.com">
+                        <i className="fas fa-envelope">  </i>  aishwaryaacademyattur@gmail.com
+                        {/* <a href="mailto:aishwaryaacademyattur@gmail.com">
                           {" "}
-                          aishwaryaacademyattur@gmail.com
-                        </a>
+                            aishwaryaacademyattur@gmail.com
+                        </a> */}
                       </span>
                     </p>
                     <p>

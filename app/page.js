@@ -22,7 +22,7 @@ export const metadata = {
 };
 export default function Home3() {
   return (
-    <div className="home_3 bg-gray-200">
+    <div className="home_3 .home_3_color">
       <TopbarSection style="tf__topbar tf__topbar_2" />
       <NavbarSection style="main_menu_3" logo="images/logo3.png" />
       <HeroSection />

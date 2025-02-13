@@ -15,16 +15,19 @@ const CategoryGrid = () => {
               paddingRight: 0, 
             }}
           >
-            <div
-              className={`tf__popular_service_single ${item.color} p-3 border rounded shadow`}
-              style={{
-                textAlign: "center",
-                wordBreak: "break-word",
-                height: "100%",
-                padding: "0 15px",
-                background: `url(${item.bgImage}) center/cover no-repeat`, // Dynamic background
-              }}
-            >
+           <div
+  className={`tf__popular_service_single ${item.color} p-3 border rounded`}
+  style={{
+    textAlign: "center",
+    wordBreak: "break-word",
+    height: "100%",
+    padding: "0 15px",
+    background: `url(${item.bgImage}) center/cover no-repeat`, // Dynamic background
+    border: "2px solid rgba(255, 0, 0, 0.5)", // Red border
+    boxShadow: "0 4px 8px rgba(255, 0, 0, 0.5)", // Red shadow
+  }}
+>
+
               <span
                 className="d-block mb-3"
                 style={{

@@ -76,6 +76,7 @@ body {
   scroll-behavior: smooth;
   font-family: var(--paraFont);
   color: var(--paraColor);
+  background-color: #D3D3D3;
 }
 
 img {
@@ -473,7 +474,7 @@ button {
   background-size: cover !important;
   padding-top: 245px;
   padding-bottom: 180px;
-  background-image: url(../images/breadcrumb_bg_1.jpg);
+  /* background-image: url(../images/breadcrumb_bg_1.jpg); */
 }
 
 .tf__breadcrumb .container {
@@ -483,7 +484,7 @@ button {
 .tf__breadcrumb .container::after {
   position: absolute;
   content: "";
-  background: url(../images/breadcrumb_bg_img.png);
+  /* background: url(../images/breadcrumb_bg_img.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -776,7 +777,7 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  background-image: url(../images/banner_bg.jpg);
+  /* background-image: url(../images/banner_bg.jpg); */
 }
 
 .tf__banner_2 div,
@@ -1128,7 +1129,7 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  background-image: url(../images/about_bg.png);
+  /* background-image: url(../images/about_bg.png); */
 }
 
 .tf__about_top {
@@ -1993,7 +1994,7 @@ button {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: url(../images/testimonial_bg.jpg);
+  /* background-image: url(../images/testimonial_bg.jpg); */
 }
 
 .tf___testimonial .tf__heading_area h5,
@@ -4560,7 +4561,7 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  background-image: url(../images/banner_bg2.jpg);
+  /* background-image: url(../images/banner_bg2.jpg); */
 }
 
 .tf__banner_2_text {
@@ -4585,8 +4586,11 @@ button {
 }
 
 .tf__popular_categories_2_area {
-  background: var(--colorWhite);
+  background-color: #D3D3D3;
+  
   border-top: 7px solid var(--colorBlue);
+  
+
 }
 
 .tf__popular_categories_2 .tf__popular_service_single {
@@ -4976,7 +4980,7 @@ button {
 
 /* team 2 start */
 .tf__team_2 {
-  background: #f3f7fb;
+ 
   position: relative;
 }
 
@@ -5608,7 +5612,7 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  background-image: url(../images/team_3_bg.jpg);
+  /* background-image: url(../images/team_3_bg.jpg); */
 }
 
 .tf__team_3 .tf__single_team .title:hover {
@@ -8599,7 +8603,9 @@ section.tf__counter_3 {
   .tf__contact_3_text {
     margin-bottom: 25px;
   }
-
+  .home_3_color{
+     background-color: #f5f5f5;
+  }
   .home_3 .tf__counter_3 {
     margin-top: -140px;
   }
