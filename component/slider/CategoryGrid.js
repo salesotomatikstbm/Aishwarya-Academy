@@ -11,27 +11,26 @@ const CategoryGrid = () => {
             className="col-6 col-sm-4 col-lg-4"
             key={item.id}
             style={{
-              paddingLeft: 0, 
-              paddingRight: 0, 
+              paddingLeft: 0,
+              paddingRight: 0,
             }}
           >
-           <div
-  className={`tf__popular_service_single ${item.color} p-3 border rounded`}
-  style={{
-    textAlign: "center",
-    wordBreak: "break-word",
-    height: "100%",
-    padding: "0 15px",
-    background: `url(${item.bgImage}) center/cover no-repeat`, // Dynamic background
-    border: "2px solid rgba(255, 0, 0, 0.5)", // Red border
-    boxShadow: "0 4px 8px rgba(255, 0, 0, 0.5)", // Red shadow
-  }}
->
+            <div
+              className={`tf__popular_service_single ${item.color} p-3 border rounded`}
+              style={{
+                textAlign: "center",
+                wordBreak: "break-word",
+                height: "100%",
+                padding: "0 15px",
+                border: "2px solid rgba(255, 0, 0, 0.5)", // Red border
+                boxShadow: "0 4px 8px rgba(255, 0, 0, 0.5)", // Red shadow
+              }}
+            >
 
               <span
                 className="d-block mb-3"
                 style={{
-                  fontSize: "2rem", 
+                  fontSize: "2rem",
                   background: `url(${item.bgImage}) center/cover no-repeat`,
                   width: "80px", // Adjust the size of the icon
                   height: "80px", // Adjust the size of the icon
@@ -44,8 +43,8 @@ const CategoryGrid = () => {
               <h3
                 className="h5 font-weight-bold mb-2"
                 style={{
-                  fontSize: "1rem", 
-                  whiteSpace: "normal", 
+                  fontSize: "1rem",
+                  whiteSpace: "normal",
                 }}
               >
                 {item.title}
@@ -54,9 +53,9 @@ const CategoryGrid = () => {
                 className="mb-3"
                 style={{
                   fontSize: "0.875rem",
-                  lineHeight: "1.5", 
-                  minHeight: "60px", 
-                  overflow: "hidden", 
+                  lineHeight: "1.5",
+                  minHeight: "60px",
+                  overflow: "hidden",
                 }}
               >
                 {item.desc}
@@ -65,7 +64,7 @@ const CategoryGrid = () => {
                 href="#"
                 className="text-primary"
                 style={{
-                  fontSize: "0.9rem", 
+                  fontSize: "0.9rem",
                 }}
               >
                 <i className="fas fa-long-arrow-right"></i>
