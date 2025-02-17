@@ -2766,14 +2766,14 @@ button {
 }
 
 .tf__popular_service_single {
- 
+  background: #FFFFFF;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 40px;
   position: relative;
   text-align: center;
-  border-bottom: 2px solid var(--colorBlack);
+  border: 2px solid black; 
   border-radius: 5px;
   overflow: hidden;
   margin: 0px 12px;
@@ -2785,7 +2785,9 @@ button {
 }
 
 
-
+.tf__popular_service_single:hover {
+  border-color: red;
+}
 
 
 .tf__popular_service_single a {

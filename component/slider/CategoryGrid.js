@@ -6,74 +6,75 @@ const CategoryGrid = () => {
   return (
     <div className="container">
       <div className="row gy-3">
-        {services.map((item, index) => (
+        {services.map((item) => (
           <div
             className="col-6 col-sm-4 col-lg-4"
             key={item.id}
-            style={{
-              paddingLeft: 0,
-              paddingRight: 0,
-            }}
+            style={{ paddingLeft: 0, paddingRight: 0 }}
           >
-            <div
-              className="tf__popular_service_single p-3 border rounded"
-              style={{
-                textAlign: "center",
-                wordBreak: "break-word",
-                height: "100%",
-                padding: "0 15px",
-                border: "2px solid red", // Default red border
-                transition: "border-color 0.3s ease",
-              }}
-            >
+            <div className="tf__popular_service_single">
               <span
-                className="d-block mb-3"
+                className="service-icon"
                 style={{
-                  fontSize: "2rem",
                   background: `url(${item.bgImage}) center/cover no-repeat`,
-                  width: "80px",
-                  height: "80px",
-                  borderRadius: "50%",
-                  margin: "0 auto",
                 }}
               ></span>
-              <h3
-                className="h5 font-weight-bold mb-2"
-                style={{
-                  fontSize: "1rem",
-                  whiteSpace: "normal",
-                }}
-              >
-                {item.title}
-              </h3>
-              <p
-                className="mb-3"
-                style={{
-                  fontSize: "0.875rem",
-                  lineHeight: "1.5",
-                  minHeight: "60px",
-                  overflow: "hidden",
-                }}
-              >
-                {item.desc}
-              </p>
-              <a
-                href="#"
-                className="text-primary"
-                style={{
-                  fontSize: "0.9rem",
-                }}
-              >
+              <h3 className="service-title">{item.title}</h3>
+              <p className="service-desc">{item.desc}</p>
+              <a href="#" className="service-link">
                 <i className="fas fa-long-arrow-right"></i>
               </a>
             </div>
           </div>
         ))}
       </div>
+
       {/* Hover Effect in CSS */}
       <style jsx>{`
+        .tf__popular_service_single {
+          text-align: center;
+          word-break: break-word;
+          height: 100%;
+          padding: 15px;
+          border: 2px solid black; /* Default border color black */
+          border-radius: 5px;
+          transition: border-color 0.3s ease-in-out;
+        }
+
         .tf__popular_service_single:hover {
-          border-color: white;
+          border-color: red; /* Change to red on hover */
+        }
+
+        .service-icon {
+          display: block;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          margin: 0 auto 15px;
+        }
+
+        .service-title {
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .service-desc {
+          font-size: 0.875rem;
+          line-height: 1.5;
+          min-height: 60px;
+          overflow: hidden;
+          margin-bottom: 10px;
+        }
+
+        .service-link {
+          font-size: 0.9rem;
+          color: black;
+          text-decoration: none;
+        }
+
+        .service-link:hover {
+          text-decoration: underline;
         }
       `}</style>
     </div>
