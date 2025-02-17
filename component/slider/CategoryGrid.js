@@ -36,12 +36,29 @@ const CategoryGrid = () => {
           word-break: break-word;
           height: 100%;
           padding: 15px;
-          border: 2px solid red; /* Default border color black */
           border-radius: 5px;
-          transition: border-color 0.3s ease-in-out;
+          border: 2px solid red;
+          background-clip: padding-box;
+          position: relative;
+          transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+          box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
         }
 
-      
+        .tf__popular_service_single::before {
+          content: "";
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          right: -2px;
+          bottom: -2px;
+          border-radius: 5px;
+          background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+          z-index: -1;
+        }
+
+        .tf__popular_service_single:hover {
+          box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
+        }
 
         .service-icon {
           display: block;
