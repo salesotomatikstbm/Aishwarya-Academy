@@ -36,14 +36,12 @@ const CategoryGrid = () => {
           word-break: break-word;
           height: 100%;
           padding: 15px;
-          border: 2px solid black; /* Default border color black */
+          border: 2px solid red; /* Default border color black */
           border-radius: 5px;
           transition: border-color 0.3s ease-in-out;
         }
 
-        .tf__popular_service_single:hover {
-          border-color: red; /* Change to red on hover */
-        }
+      
 
         .service-icon {
           display: block;

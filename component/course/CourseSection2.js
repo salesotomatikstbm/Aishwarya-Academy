@@ -14,7 +14,7 @@ const CourseSection2 = () => {
   const filteredCourses = courseDataArray.filter((item) => item.category === activeCategory);
 
   return (
-    <section className="tf__courses_2 tf__courses_3 overflow-hidden mt_95 py-5">
+    <section className="tf__courses_2 tf__courses_3 overflow-hidden ">
       <div className="container overflow-hidden">
         <div className="row wow fadeInUp">
           <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto text-center">
