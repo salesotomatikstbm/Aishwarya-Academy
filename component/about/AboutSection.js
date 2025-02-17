@@ -55,19 +55,15 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="col-xl-6 col-sm-9 col-md-8 col-lg-6 wow fadeInRight">
-            <div className="tf__about_img">
-              <img
-                src="images/about_img.png"
-                alt="about"
-                className="img-fluid w-100"
-              />
-              {/* <div className="text">
-                <i className="far fa-check-circle"></i>
-                <h3>183k+</h3>
-                <p>Complete Projects</p>
-              </div> */}
-            </div>
-          </div>
+  <div className="tf__about_img d-none d-md-block">
+    <img
+      src="images/about_img.png"
+      alt="about"
+      className="img-fluid w-100"
+    />
+  </div>
+</div>
+
         </div>
       </div>
     </section>

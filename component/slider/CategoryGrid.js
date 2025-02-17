@@ -16,30 +16,27 @@ const CategoryGrid = () => {
             }}
           >
             <div
-              className={`tf__popular_service_single ${item.color} p-3 border rounded`}
+              className="tf__popular_service_single p-3 border rounded"
               style={{
                 textAlign: "center",
                 wordBreak: "break-word",
                 height: "100%",
                 padding: "0 15px",
-                border: "2px solid rgba(255, 0, 0, 0.5)", // Red border
-                boxShadow: "0 4px 8px rgba(255, 0, 0, 0.5)", // Red shadow
+                border: "2px solid red", // Default red border
+                transition: "border-color 0.3s ease",
               }}
             >
-
               <span
                 className="d-block mb-3"
                 style={{
                   fontSize: "2rem",
                   background: `url(${item.bgImage}) center/cover no-repeat`,
-                  width: "80px", // Adjust the size of the icon
-                  height: "80px", // Adjust the size of the icon
-                  borderRadius: "50%", // Make the icon circular
+                  width: "80px",
+                  height: "80px",
+                  borderRadius: "50%",
                   margin: "0 auto",
                 }}
-              >
-                {/* Empty span for the background image to act as the icon */}
-              </span>
+              ></span>
               <h3
                 className="h5 font-weight-bold mb-2"
                 style={{
@@ -73,6 +70,12 @@ const CategoryGrid = () => {
           </div>
         ))}
       </div>
+      {/* Hover Effect in CSS */}
+      <style jsx>{`
+        .tf__popular_service_single:hover {
+          border-color: white;
+        }
+      `}</style>
     </div>
   );
 };

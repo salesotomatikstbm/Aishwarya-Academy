@@ -62,7 +62,8 @@ const TestimonialSlider2 = () => {
             </div>
             <p className="description">{item.desc}</p>
             <h3 className="title">{item.name}</h3>
-            <p className="designation">{item.designation}</p>
+            <p className="designation" style={{ color: "red" }}>{item.designation}</p>
+
           </div>
         </div>
       ))}
