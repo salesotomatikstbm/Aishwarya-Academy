@@ -36,12 +36,12 @@ const CategoryGrid = () => {
           word-break: break-word;
           height: 100%;
           padding: 15px;
-          border-radius: 5px;
+          border-radius: 10px; /* Increased border-radius */
           border: 2px solid red;
           background-clip: padding-box;
           position: relative;
           transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-          box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+          box-shadow: 0px 6px 12px rgba(255, 0, 0, 0.3); /* Softer shadow */
         }
 
         .tf__popular_service_single::before {
@@ -51,13 +51,13 @@ const CategoryGrid = () => {
           left: -2px;
           right: -2px;
           bottom: -2px;
-          border-radius: 5px;
+          border-radius: 10px; /* Match the increased border-radius */
           background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
           z-index: -1;
         }
 
         .tf__popular_service_single:hover {
-          box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
+          box-shadow: 0px 8px 18px rgba(255, 0, 0, 0.5); /* Slightly larger hover shadow */
         }
 
         .service-icon {
