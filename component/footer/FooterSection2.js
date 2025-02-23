@@ -19,9 +19,9 @@ const FooterSection2 = ({ style, logo }) => {
               and more. We provide tailored resources and mock exams to help you
               succeed.
             </p>
-            <a className="apply_btn" href="#">
+            {/* <a className="apply_btn" href="#">
               Join Now
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
