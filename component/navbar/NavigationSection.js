@@ -12,9 +12,20 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
       className={`collapse navbar-collapse ${isMobileNavOpen ? "show" : ""}`}
       id="navbarNav"
     >
-      <ul className={`navbar-nav ${position}`}>
+      {/* <ul className={`navbar-nav ${position}`}>
         <li className="nav-item">
-        <Navlink href="/">home</Navlink>
+        <Navlink href="/">home</Navlink> */}
+
+
+
+
+
+
+
+
+
+
+        
           {/* <a className="nav-link">
             Home <i className="fa fa-angle-down"></i>
           </a>
@@ -29,10 +40,16 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
               <SubNavlink href="/home-3">home 3</SubNavlink>
             </li>
           </ul> */}
-        </li>
+
+
+
+
+
+
+        {/* </li>
         <li className="nav-item">
           <Navlink href="/about">about us</Navlink>
-        </li>
+        </li> */}
 
 
 
@@ -68,23 +85,10 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
           </ul>
          
         </li> */}
-
-
-
-
-
-
-
-
-
-
         
         {/* <li className="nav-item">
           <Navlink href="/courses">courses</Navlink>
         </li> */}
-
-        
-
 
         {/* <li className="nav-item">
           <Navlink href="/blog">blog</Navlink>
@@ -93,6 +97,14 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
         {/* <li className="nav-item">
           <Navlink href="/contact">contact</Navlink>
         </li> */}
+
+
+
+
+
+
+
+{/* 
         {btnPosition ? null : (
           <li className="nav-item">
             <Navlink href="/contact">contact us</Navlink>
@@ -104,7 +116,7 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
         <a className="common_btn_2 ms-auto " href="#">
           learn more
         </a>
-      ) : null}
+      ) : null} */}
     </div>
   );
 };
