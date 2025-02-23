@@ -49,9 +49,9 @@ const AboutSection = () => {
                 <li>Personalized guidance to enhance individual learning potential.</li>
                 <li>Regular assessments and feedback to track progress effectively.</li>
               </ul>
-              <Link href="/about" className="common_btn">
+              {/* <Link href="/about" className="common_btn">
                 about more
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="col-xl-6 col-sm-9 col-md-8 col-lg-6 wow fadeInRight">

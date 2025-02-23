@@ -45,7 +45,7 @@ const NavbarSection = ({ style, logo }) => {
         <Link className="navbar-brand" href="/">
           <img src={logo} alt="Eduor" className="img-fluid w-100" />
         </Link>
-        {isMobileNavOpen ? (
+        {/* {isMobileNavOpen ? (
           <button
             className="navbar-toggler"
             type="button"
@@ -61,7 +61,7 @@ const NavbarSection = ({ style, logo }) => {
           >
             <i className="fa fa-bars menu_icon"></i>
           </button>
-        )}
+        )} */}
 
         <NavigationSection
           position="ms-auto"

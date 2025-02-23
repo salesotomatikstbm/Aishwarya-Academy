@@ -64,9 +64,10 @@ const TeamSliderA = () => {
                 />
               </div>
               <div className="tf__single_team_text">
-                <Link className="title team-title" href={`/team/${item.slug}`}>
+                <p className="title team-title">
                   {item.name}
-                </Link>
+                </p>
+                {/* href={`/team/${item.slug}`} */}
                 <p className="team-designation">{item.designation}</p>
                 <p className="team-about" style={{ fontWeight: "bold" }}>
                   {item.about}

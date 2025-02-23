@@ -95,7 +95,7 @@ const CourseSection2 = () => {
             {filteredCourses.map((item) => (
               <div className="col-xl-2 col-lg-2 col-md-4 col-sm-6 wow fadeInUp mb-4" key={item.id}>
                 <div className="tf__single_courses" style={{ display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden", marginBottom: "2px", border: "2px solid white", backgroundColor: "white" }}>
-                  <Link href={`/courses/${item.slug}`} className="d-block">
+                  <div  className="d-block">
                     <div className="tf__single_courses_img position-relative" style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "auto", width: "100%", border: "2px solid white" }}>
                       <img
                         src={item.imgSrc}
@@ -106,7 +106,7 @@ const CourseSection2 = () => {
                     <div className="tf__single_courses_text p-3 text-center" style={{ color: "red" }}>
                       {item.title}
                     </div>
-                  </Link>
+                  </div>
                 </div>
               </div>
             ))}
@@ -119,7 +119,7 @@ const CourseSection2 = () => {
             {filteredCourses.map((item) => (
               <div className="col-6 wow fadeInUp mb-4" key={item.id} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <div className="tf__single_courses" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100%", border: "2px solid white", backgroundColor: "white" }}>
-                  <Link href={`/courses/${item.slug}`} className="d-block">
+                  <div className="d-block">
                     <div className="tf__single_courses_img position-relative" style={{ width: "100%", height: "auto", display: "flex", justifyContent: "center", alignItems: "center", border: "2px solid white" }}>
                       <img
                         src={item.imgSrc}
@@ -130,7 +130,7 @@ const CourseSection2 = () => {
                     <div className="tf__single_courses_text p-3 text-center" style={{ flex: "1", display: "flex", justifyContent: "center", alignItems: "center", color: "red" }}>
                       {item.title}
                     </div>
-                  </Link>
+                  </div>
                 </div>
               </div>
             ))}
