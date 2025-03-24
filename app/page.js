@@ -5,6 +5,7 @@ import HeroSection from "@/component/banner/HeroSection";
 import CategorySection2 from "@/component/category/CategorySection2";
 
 import Testimonial from "@/component/cms/Testimonial";
+
 import CounterSection from "@/component/counter/CounterSection";
 import CourseSection2 from "@/component/course/CourseSection2";
 import FooterSection2 from "@/component/footer/FooterSection2";
@@ -26,7 +27,7 @@ export default function Home3() {
       <TopbarSection style="tf__topbar tf__topbar_2" />
       <NavbarSection style="main_menu_3" logo="images/logo3.png" />
       <HeroSection />
-      {/* <BannerSection3 /> */}
+     
       <CategorySection2 />
       <AboutSection />
 
