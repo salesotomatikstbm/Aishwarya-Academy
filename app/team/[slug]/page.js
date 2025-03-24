@@ -1,7 +1,7 @@
 import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 import Layout from "@/component/layout/Layout";
 import TeamDetailSection from "@/component/team/TeamDetailSection";
-import ErrorSection from "@/components/ErrorSection";
+// import ErrorSection from "@/components/ErrorSection";
 import { teamData } from "@/data/Data";
 export const metadata = {
   title: "Aishwarya Academy",
@@ -16,7 +16,8 @@ export default function TeamDetails({ params }) {
       {teamDesc ? (
         <TeamDetailSection teamInfo={teamDesc} />
       ) : (
-        <ErrorSection type="Team Member" />
+        <TeamDetailSection teamInfo={teamDesc} />
+        // <ErrorSection type="Team Member" />
       )}
     </Layout>
   );
