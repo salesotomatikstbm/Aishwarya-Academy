@@ -1,7 +1,7 @@
 import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 import Layout from "@/component/layout/Layout";
 import TeamDetailSection from "@/component/team/TeamDetailSection";
-import ErrorSection from '@/components/ErrorSection';
+import ErrorSection from "@/components/ErrorSection";
 import { teamData } from "@/data/Data";
 export const metadata = {
   title: "Aishwarya Academy",
