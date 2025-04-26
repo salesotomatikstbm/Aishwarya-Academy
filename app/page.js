@@ -29,6 +29,9 @@ export default function Home3() {
       <HeroSection />
      
       <CategorySection2 />
+
+
+      
       <AboutSection />
 
       <CounterSection />

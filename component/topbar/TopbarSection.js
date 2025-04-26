@@ -32,27 +32,27 @@ const TopbarSection = ({ style }) => {
             <ul className="d-flex flex-wrap">
                       
                       <li>
-                        <a href="#">
+                        <a href="https://www.youtube.com/@aishwarya_academy_attur" target='blank'>
                           <i className="fab fa-youtube"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <i className="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/aishwarya_academy_attur/"  target='blank'>
+                          <i className="fab fa-instagram" ></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://whatsapp.com/channel/0029VaEphua8PgsLVSmllg2X"  target='blank'>
                           <i className="fab fa-whatsapp"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <i className="fab fa-telegram-plane"></i>
+                        <a href="https://t.me/aishwaryaacademy"  target='blank'>
+                          <i className="fab fa-telegram-plane" ></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/aishwaryaacademy"  target='blank'>
                           <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>

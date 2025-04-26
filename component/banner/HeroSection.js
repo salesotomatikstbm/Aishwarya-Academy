@@ -92,17 +92,19 @@ const HeroSection = () => {
                 className="w-100 d-block d-sm-none" // Show on mobile
                 style={{
                   height: "100vh", // Full viewport height for desktop
-                  objectFit: "cover", // Ensure full coverage
+                  objectFit: "contain", 
+                  marginTop: "90px",// Ensure full coverage
                 }}
               />
               {/* Mobile Image */}
               <img
                 src={`https:${heroImagesMobile[index]}`}
                 alt={`Slide ${index + 1}`}
-                className="w-100 d-none d-sm-block" // Show on desktop
+                className="w-100 d-none d-sm-block " // Show on desktop
                 style={{
                   height: "100vh", // Full viewport height for mobile
-                  objectFit: "cover", // Ensure the image covers the screen
+                  objectFit: "contain",
+                  // Ensure the image covers the screen
                 }}
               />
             </div>
