@@ -27,10 +27,8 @@ export default function Home3() {
       <TopbarSection style="tf__topbar tf__topbar_2" />
       <NavbarSection style="main_menu_3" logo="images/logo3.png" />
       <HeroSection />
-     
+    
       <CategorySection2 />
-
-
       
       <AboutSection />
 
